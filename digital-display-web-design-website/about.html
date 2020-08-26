@@ -1,73 +1,143 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Affordable and professional web design">
-	<meta name="keywords" content="web design, affordable web design">
-	<meta name="author" content="Demetrios Michael">
-	<title>Acme Web Design | About</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<meta name="description" content="Demetrios Michael Portfolio">
+	<meta name="keywords" content="Demetrios Michael Portfolio">
+	<meta name="author" content="Demetios Michael">
+	<title>Demetrios Michael (About)</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<!-- Start of CSS Bootstrap Link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- End of CSS Bootstrap Link -->
+	<!-- Start of Google Font Links -->
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+	<!-- End of Google Font Links -->  
 </head>
+
 <body>
-	<header>
-		<div class="containter">
-			<div id="branding">
-				<h1><span class="highlight">About</span></h1>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li class="current"><a href="about.html">About</a></li>
-					<li><a href="Services.html">Services</a></li>				
-				</ul>
-				
-			</nav>
+
+<a name="top"></a>
+
+<header>
+	<div class="container">
+		<div id="branding">
+			<a href="index.html"><img src="images/dm-logo3.png" height="65" width="65"></a>
 		</div>
-	</header>
+		<nav>
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+</header>
 
-	<section id="newsletter">
-		<div class="container">
-			<h1>Subscribe to Our Newsletter</h1>
-			<form>
-				<input type="email" placeholder="Enter Email...">
-				<button type="submit" class="button_1">Subscribe</button>
-			</form>
-		</div>
-	</section>
-
-	<section id="main">
-		<div class="container">
-			<article id="main-column">
-				<h1 class="page-title">About Us<h1>
-					<p>Digial Display, LLC, is a web design agency that works with clients all around the world. We design and build professional websites for large corporations, small to large businesses, and individuals.  There is no project we can't handle.</p>
-
-					<p>We have a passion for developing and designing the right type of web platform for your needs.  We have graphic designers, programmers, and business experts that love what they do.</p>
-
-					<p>Our goal is to provide each customer with a professionally built website that not only looks amazing but has the functionality to go with it.  We use all of the latest web technologies and current standards so that we meet all of your online needs. We provide inhouse graphic design services, business cards, and other design services.</p>
-
-					<p>We're not in the business of just building your website and then walking away once its completed.  We value retaining our relationships with our customers so that we can help develop your business and ensure that you are satisfied.</p>
-
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-			</article>
-
-			<aside id="sidebar">
-				<div class="dark">
-					<h3>What We DO</h3>
-						<p>Web Design & Development, Logo Design, Online Marketing, Copywriting, Website Hosting, and Website Support</p>
+<!-- MODAL (START) -->
+	<div id="contact-modal" class="modal"> <!-- start of .modal -->
+		<div class="modal-dialog"> <!-- start of .modal-dialog -->
+			<div class="modal-content"><!-- start of .modal-conent -->
+				<div class="modal-header"> <!-- start of .modal-header -->
+					<h2 class="modal-title">Contact Me</h2>
+					<button class="close" type="button" data-dismiss="modal">x</button>
+				</div> <!-- end of .model-header -->
+				<div class="modal-body">
+					<p>Have a project/propposal or just want to say hi?  Feel free to reach out to me at demetriosm7@yahoo.com</p>
+					<p><a href="https://www.linkedin.com/in/demetrios-michael/" target="_blank">linkedin</a></p>
+					<p><a href="https://codepen.io/Demetriosm7/" target="_blank">Codepen</a></p>
+					<p><a href="https://github.com/Demetriosm7" target="_blank">Github</a></p>
 				</div>
-			</aside>
-				
+			</div><!-- end .modal-conent -->
+		</div> <!-- end .modal-dialog -->
+	</div> <!-- end .modal -->
+	<!-- MODAL (END) -->
+
+	<section id="section3">
+		<div class="container">
+			<h1>Who Am I?</h1>
+			<h3>I'm Demetrios Michael, a web designer/developer based in the Charlotte, North Carolina area of the United States.</h3>
+			<p>I enjoy building professional, fun, exciting and user-friendly websites that help bring businesses and people together.</p>
+		</div>
+		<div>
+
 		</div>
 	</section>
 
-	<footer>
-		<p>Digital Display Web Design, Copy &copy; 2020</p>
-	</footer>
+	<section class="about-section1">
+		<div class="about-container1">
+			<h1>Design</h1>
+			<img class="images" src="images/graphic-design.jpg" width="100%">
+			<p>I enjoy helping businesses, and people, bring their dreams to life.  I work closely with clients to gain a clear understanding of how they want their websites to look and feel in order to convey the message that they want to send.</p>
+		</div>
+		<div class="about-container2">
+			<h1>Develop</h1>
+			<img class="images" src="images/computer1.jpg" width="100%">
+			<p>As a coder/developer, I understand the tools necessary to get the job done.  It’s important to me, when creating websites, that they run cleanly across multiple devices using the latest technologies.</p>
+		</div>
+		<div class="about-container3">
+			<h1>Deploy</h1>
+			<img class="images" src="images/web-pages.jpg" width="100%">
+			<p>I take pride in the work that I create insuring that the final product is fully functional, user-friendly and responsive.  One of the most exciting things to see is your idea in action.</p>
+		</div>
+	</section>
+
+<!-- SECTION 4 (START) -->
+
+	<section id="section4">
+		<div class="container1">
+			<h2>Front-End Skill Set</h2>
+			<p>I've been working on front-end design using HTML5, CSS3, and JavaScript.  I also have a knowledge of ReactJS, jQuery, Version Control/Git, Wireframing, Bootstrap and Photoshop. I focus on simplistic, clean and responsive web designs.  I’m always expanding my knowledge of web technologies in order to enhance my techniques.</p>
+		</div>
+		<div class="container2">
+			<h2>Back-End Skill Set</h2>
+			<p>I’m also applying myself in the back-end of development focusing my attention on areas such as PHP, MongoDB, NodeJS, JSON and API architectures (REST/SOAP) so that I can become a more rounded web developer.</p>
+			</p>
+		</div>
+		<div class="container3">
+			<h2>Why Web Development?</h2>
+			<p>I have a strong passion for web design because it gives me the freedom, creativity and flexibility to produce wonderful and artistic platforms that help connect people.  it's an ever-evolving field that offers many rewards.</p>
+		</div>
+		<div class="container4">
+			<h2>My Availability</h2>
+			<p>I’m available for hire or if you’re interested in connecting just click on my contact link to get more information.</p>
+		</div>
+	</section>
+
+	<!-- SECTION 4 (END) -->
+ 
+	<div class="footer-button">
+		<a href="#top"><img src="images/up-arrow2.png" height="50" width="100"></a>
+	</div>
+
+	<section class="footer">
+		<div class="footer-nav">
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#contact-modal">contact</a></li>
+			</ul>
+		</div>
+		<div class="footer-copyright">
+			<p>&copy; 2020 Demetrios Michael</p>
+		</div>
+	</section>
+
+<script type="text/JavaScript" src="script.js"></script>	
+
+<!-- Start of JavaScript Bootstrap Link -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- End of JavaScript Bootstrap Link -->
+
 </body>
 </html>
+
+
+
+
