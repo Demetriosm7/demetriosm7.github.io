@@ -1,0 +1,78 @@
+.footer {
+    background-color: rgb(148, 142, 142);
+    color: White;
+    padding: 3.7rem 0rem 3.5rem 0rem; // 40px
+    text-align: center;
+
+    @include breakpoint-up(large){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "logo links1 links2 cta"
+        "social links1 links2 cta";
+    }
+
+    @include breakpoint-up(medium){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "logo links1 links2 cta"
+        "social links1 links2 cta";
+    }
+
+    a {
+        color: white;
+    }
+
+    &__social {
+        align-self: center;
+
+        a {
+            display: inline-block;
+        }
+
+        a:not(:last-child) {
+            padding-right: .25rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2.5;
+        font-size: 0.9375rem; // 15px
+
+        @include breakpoint-up(large){
+            justify-content: space-between;
+        }
+
+        a:hover {
+            color: $darkBrown;
+            transition: color 350ms ease-in-out;
+        }
+        
+        &.col1 {
+            @include breakpoint-up(large){
+                grid-area: links1;
+            }
+        }
+
+        &.col {
+            @include breakpoint-up(large){
+                grid-area: links2;
+            }
+        }
+    }
+
+    &__copyright {
+        align-self: center;
+        font-size: 0.9rem; // 14.4px
+
+        @include breakpoint-down(small){
+            margin-top: 0.4rem; // 5.4px
+        }
+    }
+}
