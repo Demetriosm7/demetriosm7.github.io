@@ -1,0 +1,49 @@
+header {
+	min-height: 70px;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	background: linear-gradient(to right, #21364b, #21364b);
+	-moz-box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-bottom: #000 3px solid;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+header li img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+header #branding {
+	float: left;
+	margin: 0px auto;
+	padding: 0px auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+header nav {
+	float: right;
+	margin-top: 25px;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #6B84FA;
+	font-weight: bold;
+	transition: all .30s ease-in-out;
+	text-decoration: none;
+}
