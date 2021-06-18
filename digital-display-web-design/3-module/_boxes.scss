@@ -1,0 +1,19 @@
+#boxes {
+    margin-top: 20px;  
+
+    &::grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  #boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #boxes .box img {
+    width: 80px;
+  }
