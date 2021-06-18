@@ -1,0 +1,50 @@
+// Modal (Start)
+#contact-modal {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-top: 15%;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.modal {
+	margin: 0;
+	padding: 0;
+}
+
+.modal-open {
+	padding: 0px !important;
+	overflow: auto !important;
+}
+
+.modal-header {
+	background: #b0d1ff;
+	color: #000;
+	font-family: 'Neucha', sans-serif;
+}
+
+.modal-title {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.modal-body {
+	background: #EAEAEA;
+}
+
+.close {
+	color: #fff;
+}
+
+.modal-title {
+	float: left;
+}
+
+.modal-head .close {
+	float: right;
+}
+// Modal (End)
