@@ -1,0 +1,54 @@
+// Base Styles and Media Queries
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out 250ms;
+}
+
+// Might get rid of the HTML later, might not have a purpose
+
+html {
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.clearfix::after, 
+section::after,
+footer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}

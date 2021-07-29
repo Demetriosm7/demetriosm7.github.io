@@ -1,0 +1,60 @@
+// Home-Hero Styles and Media Queries
+.home-hero {
+    background-image: url(../../images/night2-imleedh-ali-Uf-_p8zZiT8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: $white;
+
+    .title {
+        margin-top: 3em;
+        font-weight: 900;
+        padding: 1.25em;
+        line-height: 180%;
+
+        span {
+            font-weight: 300;
+            display: block;
+            font-size: .9em;
+        }
+    
+        p {
+            padding: 1.25em;
+        }
+    }
+}
+
+// Media Queries
+// 20em | 320px
+@media (min-width: 20em) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 17vh;
+
+        .title {
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .home-hero h1 {
+        font-size: 1.9rem;
+    }
+}
+
+// 60em | 960px
+@media (min-width: 60em) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 17vh;
+
+        .title {
+            margin-top: 3em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .home-hero h1 {
+        font-size: 2.3rem;
+    }
+}

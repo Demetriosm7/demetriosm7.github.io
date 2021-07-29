@@ -1,0 +1,56 @@
+// Variables
+
+// Color Variables
+// Red
+$diversRed: #b62f2f;
+$lightRed: #d45050;
+$veryLightRed: #e27373;
+
+// Gray
+$gray: #808080;
+$darkGray: #404040;
+$mediumGray: #646262;
+$lightGray: #878787;
+$verylightGray: #d1d1d1;
+
+// White
+$white: #ffffff;
+$lightTan: #dbccae;
+$offWhite: #f0e6d0;
+$floralWhite: #fef8ec;
+
+//Blue
+$blue: #0000ff;
+$oceanBlue: #0e0e58;
+$diversBlue: #2b2be9;
+$turquoise: #00eeff;
+$lightBlue: #add8e6;
+
+// Font Variables
+$font-small: 0.875rem; // 14px
+$font-medium: 1.125rem; // 18px
+$font-large: 1.25rem; // 20px
+$font-xlarge: 2.75rem; // 44px
+$font-xxlarge: 3.125rem; // 50px
+
+// Breakpoints
+// 640px, 1024px, 1400px
+
+/*
+$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+  
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
+  
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+  
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}
+*/

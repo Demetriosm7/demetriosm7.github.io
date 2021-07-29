@@ -1,0 +1,66 @@
+.cta {
+    background-color: $oceanBlue;
+    padding: 10em 0;
+    color: white;
+
+    h1 {
+        font-size: 1.9rem;
+        color: white;
+    }
+
+    p {
+        padding: 1.25em;
+    }
+
+    .container {
+        
+        .title {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            font-weight: 900;
+            padding: 1.25em;
+            line-height: 180%;
+
+            span {
+                font-weight: 300;
+                display: block;
+                font-size: .9em;
+            }
+        }
+    }
+}
+
+// Media Queries
+// 20em | 320px
+@media (min-width: 20em) {
+    .cta {
+        height: 80vh;
+        padding-top: 5vh;
+
+        .title {
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+}
+
+// 60em | 960px
+@media (min-width: 70em) {
+    .cta {
+        height: 80vh;
+        padding-top: 12vh;
+
+        .title {
+            margin-top: 3em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+}

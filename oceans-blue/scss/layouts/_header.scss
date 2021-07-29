@@ -1,0 +1,72 @@
+// Header Styles and Media Queries
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+
+    .logo {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 2rem;
+        color: $turquoise;
+        padding: 0 .5em;
+    }
+
+    nav {
+
+        ul {
+            list-style-type: none;
+    
+        }
+    
+        li {
+            display: inline-block;
+            margin: .5em;
+        }
+    
+        a {
+            //padding: 1em;
+            color: $white;
+            text-transform: uppercase;
+            padding: .5rem;
+            font-size: .8rem;
+        }
+    
+        a:hover, a:focus {
+            color: $turquoise;
+        }
+    }
+}
+
+// Media Queries
+// 20em | 320px
+@media (min-width: 20em) {
+    header .logo {
+        text-align: center;
+    }
+
+    header nav {
+        text-align: center;
+
+        a {
+            font-size: .8rem;
+        }
+    }
+}
+
+// 60em | 960px
+@media (min-width: 60em) {
+    header .logo {
+        float: left;
+    }
+
+    header nav {
+        float: right;
+
+        a {
+            font-size: .8rem;
+        }
+    }
+}

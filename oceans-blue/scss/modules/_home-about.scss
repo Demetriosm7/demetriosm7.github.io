@@ -1,0 +1,103 @@
+// Home-About Styles and Media Queries
+.container {
+    .home-about {
+        .home-about-textbox {
+            background-color: $oceanBlue;
+            color: white;
+            padding: 3em;    
+            //width: 30%;
+            font-size: 1em;
+            //margin-left: -2.5%;   
+            outline: 3px solid $turquoise;
+            outline-offset: -2.5em;
+            line-height: 140%;
+            position: relative;
+
+            h1 {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: 300;
+                color: $turquoise;
+                background-color: $oceanBlue;
+                padding: 0 .145em;
+                //top: 1em;
+            }
+
+            p {
+                color: white;
+            }
+
+            .paragraph-color {
+                color: $turquoise;
+            }
+        }
+    }
+}
+
+// Media Queries
+// 20em | 320px
+@media (min-width: 20em) {
+    .container {
+        .home-about {
+            .home-about-textbox {
+                width: 100%;
+                font-size: 1.3rem;
+            }
+
+            .home-about-textbox h1 {
+                font-size: 1.5rem;
+                top: 1.3em;
+                padding: 0 .325em;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+// 60em | 960 px
+@media (min-width: 60em) {
+    .container {
+
+        .home-about {
+            background-image: url(../../images/sebastian-pena-lambarri-7i5HMCGupVw-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-bottom: 10em;
+            height: 80vh;
+
+            .home-about-textbox {
+                width: 50%;
+                padding: 4em;
+                outline-offset: -2.5em;
+                margin-left: -2%;
+                top: -5em;
+                font-size: 1.3rem;
+                text-align: left;
+                box-shadow: 0 0 3em 0 rgba(0,0,0, .3);
+    
+                h1 {
+                    font-size: 2rem;
+                    top: .9em;
+                    padding: 0 .3em;
+                    left: 5rem;
+                    transform: translateX(0);
+                }
+    
+                p {
+                    font-size: 1.3rem;
+                    margin-top: 0;
+                }
+
+                p:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

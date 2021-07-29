@@ -1,0 +1,99 @@
+// Portfolio Styles and Media Queries
+.portfolio {
+    //margin: 5em 0 0;
+
+    figure {
+        margin: 0;
+    }
+
+    h1 {
+        background-color: $oceanBlue;
+        padding: 3em 0em 1em 0em;
+        color: $white;
+    }
+
+    .portfolio-item {
+        position: relative;
+
+        img {
+            display: block;
+        }
+
+        .portfolio-description {
+            position: absolute;
+            z-index: 100;
+            bottom: 0em;
+            left: 0em;
+            right: 0em;
+            color: white;
+            background: rgba(0,0,0,.8);
+            
+            a {
+                margin: 1em;
+                color: $white;
+            }
+
+            a:hover, a:focus {
+                color: $turquoise;
+            }
+        }
+    }
+}
+
+// 20em | 320px
+@media (min-width: 20em) { 
+    .portfolio h1 {
+        font-size: 1.5rem;
+    }
+}
+
+// 37em | 480px
+@media (min-width: 37em) {
+    .portfolio {
+        .portfolio-item {
+            width: 50%;
+            float: left;
+            overflow: hidden;
+        }
+
+        .portfolio-description {
+            transform: translateY(150%);
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .portfolio-item:hover .portfolio-description {
+            transform: translateY(0%);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        } 
+    }
+}
+
+// 60em | 960px
+@media (min-width: 60em) {
+    .portfolio {
+        .portfolio-item {
+            width: 33.3333334%;
+            float: left;
+            overflow: hidden;
+        }
+
+        .portfolio-description {
+            transform: translateY(150%);
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .portfolio-item:hover .portfolio-description {
+            transform: translateY(0%);
+        }
+
+        h1 {
+            font-size: 2rem;
+            
+        } 
+    }
+}

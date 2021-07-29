@@ -1,0 +1,135 @@
+// Buttons Styles and Meida Queries
+// Hero button
+.hero-button {
+    display: inline-block;
+    background-color: $white;
+    color: black;
+    padding: .5em 1.5em;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 0.25em;
+    
+    //border-style: solid;
+
+    &:hover, 
+    &:focus {
+        background: $turquoise;
+        color: darkblue;
+        border: $turquoise;
+    }
+}
+
+// Portfolio Buttons
+.portfolio-button {
+    display: inline-block;
+    color: $white;
+    font-weight: 700;
+    //padding: .5em 1.5em;
+    text-align: center;
+
+    &:hover, 
+    &:focus {
+        color:$turquoise
+    }
+}
+
+// Cta buttons
+.cta-button1 {
+    background: $white;
+    color: black;
+    
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .02em;
+    border: 0.0625em solid transparent;
+    box-shadow: 0 0 0 0.25em transparent;
+    border-radius: 0.25em;
+    line-height: 1;
+
+
+    &:hover, 
+    &:focus {
+        background: $turquoise;
+        color: black;
+
+    }
+}
+
+.cta-button2 {
+    background: $white;
+    color: black;
+   
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .02em;
+    border: 0.0625em solid transparent;
+    box-shadow: 0 0 0 0.25em transparent;
+    border-radius: 0.25em;
+    line-height: 1;
+
+    &:hover, 
+    &:focus {
+        background: $turquoise;
+        color: black;
+    
+    }
+}
+
+// Media Queries
+// 20em | 320px
+@media (min-width: 20em) {
+    .hero-button {
+        font-size: 1.3rem;
+    }
+
+    .portfolio-button {
+        font-size: 1.2rem;
+    }
+
+    .cta-button1 {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: .5em .5em;
+        width: 50%;
+        margin-top: 0em;
+        margin-bottom: 0.5em;
+        //margin: 0;
+    }
+
+    .cta-button2 {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: .5em .5em;
+        width: 50%;
+        //margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        //margin: 0;
+    }
+}
+
+// 60em | 960 px
+@media (min-width: 60em) {
+
+    .hero-button {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-button {
+        font-size: 1.3rem;
+    }
+
+    .cta-button1 {
+        display: inline;
+        padding: .5em .5em;
+    }
+
+    .cta-button2 {
+        display: inline;
+        padding: .5em 2em;
+    }
+}
