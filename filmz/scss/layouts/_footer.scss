@@ -1,0 +1,142 @@
+footer {
+    background-color: black;
+
+    padding: 1.25rem;
+
+    .column-1 {
+        .unstlyed-list {
+            display: inline-block;
+
+            li {
+                list-style-type: none;
+                padding: .3em;
+
+                .paragraph-header {
+                    font-size: 1.2em;
+                    color: $orange;
+                }
+            }
+
+            a {
+                color: #f9f9f9;
+                
+                &:hover, :focus {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    .column-3 {
+        padding: 2.5em 0;
+        font-size: 1.2em;
+
+        .paragraph-header {
+            color: orange;
+        }
+
+        a {
+            padding: .3em;
+        }
+    }
+}
+
+[class^=column-] {
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=column-] :first-of-type {
+    margin-top: 0;
+}
+
+// Media Quries
+// 40rem | 640px
+@media (min-width: 40rem) {
+    [class^=column-] {
+        float: left;
+        padding: 0.25em;
+        margin-top: 0;
+    }
+
+    [class^=column-]:first-of-type {
+        padding-left: 0;
+    }
+    
+    [class^=column-]:last-child {
+        padding-right: 0;
+    }
+
+    .column-3 {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        text-align: center;
+    }
+
+    .column-1 {
+        width: 25%;
+        text-align: center;
+    }
+
+    footer {
+
+        .column-1 {
+            .unstlyed-list {
+                li {
+                    font-size: .9em;    
+
+                    .paragraph-header {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 50.875rem | 814px
+@media (min-width: 50.875rem) {
+    [class^=column-] {
+        float: left;
+        padding: 0.25em;
+        margin-top: 0;
+    }
+
+    [class^=column-]:first-of-type {
+        padding-left: 0;
+    }
+    
+    [class^=column-]:last-child {
+        padding-right: 0;
+    }
+
+    .column-3 {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        text-align: center;
+    }
+
+    .column-1 {
+        width: 25%;
+        text-align: center;
+    }
+
+    footer {
+
+        .column-1 {
+            .unstlyed-list {
+                    
+                li {
+                    font-size: 1em;    
+                    
+                    .paragraph-header {
+                        font-size: 1.2em;
+
+                    }
+                }
+            }
+        }
+    }
+}

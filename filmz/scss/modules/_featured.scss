@@ -1,0 +1,113 @@
+.featured {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        padding: 1.2em 0;
+        color: orange;
+    }
+
+    .featured-movies {
+        background-color: $darkBrown2;
+        border-bottom: opacify($color: $gold, $amount: 0.3) solid 7px;
+        padding: 0em .5em 3em .5em;
+        height: auto;
+    }
+
+    .featured-shows {
+        background: $black;
+        border-bottom: opacify($color: $gold, $amount: 0.3) solid 7px;
+        padding: 0em .5em 3em .5em;
+        height: auto;
+    }
+
+    img {
+        float: left;
+        padding: .5em;
+        border-radius: 1em;
+        cursor: pointer;
+        filter: brightness(110%);
+    }
+}
+
+// Media Queries
+// 20rem | 320px
+@media (min-width: 23rem) {
+    .featured {
+        .featured-movies {
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            img {
+                max-width: 50%;
+            }
+        }
+
+        .featured-shows {
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        img {
+            max-width: 50%;
+        }
+    }
+}
+
+// 40rem | 940px
+@media (min-width: 40rem) {
+    .featured {
+        .featured-movies {
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        img {
+            width: 33.33334%;
+        }
+
+        .featured-shows {
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        img {
+            width: 33.33334%;
+        }
+    }
+}
+
+// 60rem | 950px
+@media (min-width: 60rem) {
+    .featured {
+        .featured-movies {
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        img {
+            width: 25%;
+        }
+
+        .featured-shows {
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        img {
+            width: 25%;
+        }
+    }
+}

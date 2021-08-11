@@ -1,0 +1,29 @@
+header {    
+    background-color: black;
+    padding: 1.25rem;
+    border-bottom: opacify($color: $gold, $amount: 0.3) solid 7px;
+
+    h1 {
+        color: $gold;
+    }
+
+    .logo {
+        float: left;
+    }
+}
+
+// Media Queries
+ // 59.375rem | 950px
+@media (min-width:59.375rem) {
+    header {
+  
+        h1 {
+        font-size: 2.5rem;
+        float: left;
+        }
+
+        nav {
+        float: right;
+        }
+    }
+  }

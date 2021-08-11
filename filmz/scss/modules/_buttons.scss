@@ -1,0 +1,30 @@
+.header-button {
+    display: inline-block;
+    background-color: #00000000;
+    border: solid 1.5px orange;
+    border-radius: 5px;
+    color: orange;
+    padding: 0.4em 1em;
+    font-family: 'Avenir Roman,sans-serif';
+    text-decoration: none;
+
+    &:hover, :focus {
+        background-color: orange;
+        color: $black;
+    }
+}
+
+// Media Quries
+// 19.375rem | 310px
+@media (min-width:1rem) {
+    .header-button {
+        font-size: 1rem;
+    }
+}
+
+// 59.375rem | 950px
+@media (min-width: 59.375rem) {
+    .header-button {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,108 @@
+.home-about-2 {
+    background-color: $black;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Avenir Roman,sans-serif';
+    border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
+    
+    .container {
+        margin: 0 auto;
+        padding: 2em;
+
+        .flex-container {
+            
+            .about-text2 {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding: 2em;
+                line-height: 3em;
+            }
+        }
+    }
+}
+
+// Media Quries
+// 1rem | 16px
+@media (min-width: 1rem) {
+    .home-about-2 {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+
+        .container {
+
+            .flex-container {
+
+                .about-text2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    h2 {
+                        font-size: 1.7em;
+                    }
+                }
+
+                .about-image2 {
+                    padding: 2em;
+                }
+            }
+        }
+    }
+}
+
+// 40rem | 640px
+@media (min-width: 40rem) {
+    .home-about-2 {
+        height: 70vh;
+        
+        .container {
+
+            .flex-container {
+
+                .about-text2 {
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+    
+                .about-image2 {
+                    padding: 2em;
+                }
+            }
+            }
+    }
+}
+
+// 60rem | 900px
+@media (min-width: 60rem) {
+
+    .home-about-2 {
+        height: 80vh;
+      
+        .container {
+            display: flex;
+            flex-direction: row;
+
+            .flex-container {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .about-text2 {
+                    text-align: left;
+    
+                    h1 {
+                        font-size: 3em;
+                    }
+                }
+    
+                .about-image2 {
+                    max-width: 60%;
+                    padding: 3em;
+                }
+            }
+        }
+    }
+}
