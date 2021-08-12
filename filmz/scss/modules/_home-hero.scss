@@ -6,13 +6,10 @@
     resize: both;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: $gold, $amount: 0.3) solid 7px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    @include breakpoint-down(small){
-        min-height: 60vh;
-    }
 
     .container {
         display: flex;
@@ -26,9 +23,9 @@
 
 // Media Queries
 // 1rem | 16px
-@media all and (min-width: 1rem) {
+@media (min-width: 1rem) {
     .home-hero {
-        //min-height: 60vh;
+        //min-height: 50vh;
 
         .container {
             padding: 2em;
@@ -47,9 +44,9 @@
 }
 
 // 40rem | 640px
-@media all and (min-width: 40rem) {
+@media (min-width: 40rem) {
     .home-hero {
-        //min-height: 60vh;
+        min-height: 60vh;
 
         .container {
             padding: 2.5em;
@@ -66,10 +63,10 @@
 }
 
 // 60rem | 960px
-@media all and (min-width: 60rem) {
+@media (min-width: 60rem) {
 
     .home-hero {
-        //min-height: 60vh;
+        min-height: 70vh;
 
         .container {
             padding: 3.5em;

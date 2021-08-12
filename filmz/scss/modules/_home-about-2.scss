@@ -5,10 +5,6 @@
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
     
-    @include breakpoint-down(small){
-        min-height: 60vh;
-    }
-
     .container {
         margin: 0 auto;
         padding: 2em;
@@ -28,7 +24,7 @@
 
 // Media Quries
 // 1rem | 16px
-@media all and (min-width: 1rem) {
+@media (min-width: 1rem) {
     .home-about-2 {
         display: flex;
         flex-direction: column;
@@ -49,7 +45,7 @@
                 }
 
                 .about-image2 {
-                    padding: .5em;
+                    padding: 2em;
                 }
             }
         }
@@ -57,9 +53,9 @@
 }
 
 // 40rem | 640px
-@media all and (min-width: 40rem) {
+@media (min-width: 40rem) {
     .home-about-2 {
-        //min-height: 60vh;
+        min-height: 60vh;
         
         .container {
 
@@ -73,18 +69,18 @@
                 }
     
                 .about-image2 {
-                    padding: .5em;
+                    padding: 2em;
                 }
             }
-            }
+        }
     }
 }
 
 // 60rem | 900px
-@media all and (min-width: 70rem) {
+@media (min-width: 60rem) {
 
     .home-about-2 {
-        //min-height: 60vh;
+        min-height: 70vh;
       
         .container {
             display: flex;
@@ -104,7 +100,7 @@
     
                 .about-image2 {
                     max-width: 60%;
-                    padding: 2em;
+                    padding: 3em;
                 }
             }
         }
