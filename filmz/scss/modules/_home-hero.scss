@@ -6,10 +6,10 @@
     resize: both;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: $gold, $amount: 0.3) solid 7px;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 
     .container {
         display: flex;
@@ -25,7 +25,7 @@
 // 1rem | 16px
 @media all and (min-width: 1rem) {
     .home-hero {
-        min-height: 60vh;
+        //min-height: 60vh;
 
         .container {
             padding: 2em;
@@ -46,7 +46,7 @@
 // 40rem | 640px
 @media all and (min-width: 40rem) {
     .home-hero {
-        min-height: 60vh;
+        //min-height: 60vh;
 
         .container {
             padding: 2.5em;
@@ -66,7 +66,7 @@
 @media all and (min-width: 60rem) {
 
     .home-hero {
-        min-height: 60vh;
+        //min-height: 60vh;
 
         .container {
             padding: 3.5em;
