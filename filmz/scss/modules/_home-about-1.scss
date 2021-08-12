@@ -20,11 +20,11 @@
 
 // Media Quries
 // 1rem | 16px
-@media (min-width: 1rem) {
+@media all and (min-width: 1rem) {
     .home-about-1 {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 60vh;
 
         .container {
 
@@ -46,7 +46,7 @@
 }
 
 // 40rem | 640px
-@media (min-width: 40rem) {
+@media all and (min-width: 40rem) {
     .home-about-1 {
         min-height: 100vh;
         
@@ -67,7 +67,7 @@
 }
 
 // 60rem | 900px
-@media (min-width: 60rem) {
+@media all and (min-width: 60rem) {
 
     .home-about-1 {
         min-height: 100vh;

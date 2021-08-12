@@ -23,7 +23,7 @@
 
 // Media Queries
 // 1rem | 16px
-@media (min-width: 1rem) {
+@media all and (min-width: 1rem) {
     .home-hero {
         min-height: 50vh;
 
@@ -44,7 +44,7 @@
 }
 
 // 40rem | 640px
-@media (min-width: 40rem) {
+@media all and (min-width: 40rem) {
     .home-hero {
         min-height: 60vh;
 
@@ -63,7 +63,7 @@
 }
 
 // 60rem | 960px
-@media (min-width: 60rem) {
+@media all and (min-width: 60rem) {
 
     .home-hero {
         min-height: 70vh;
