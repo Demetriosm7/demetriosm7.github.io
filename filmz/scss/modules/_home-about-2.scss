@@ -4,8 +4,11 @@
     justify-content: center;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
-    min-height: 100vh;
     
+    @include breakpoint-down(small){
+        min-height: 60vh;
+    }
+
     .container {
         margin: 0 auto;
         padding: 2em;

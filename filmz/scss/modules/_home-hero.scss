@@ -9,7 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    
+    @include breakpoint-down(small){
+        min-height: 60vh;
+    }
 
     .container {
         display: flex;
