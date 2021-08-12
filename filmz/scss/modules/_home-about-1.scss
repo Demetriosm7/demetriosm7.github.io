@@ -4,6 +4,7 @@
     justify-content: center;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
+    height: 100vh;
     
     .container {
         margin: 0 auto;
@@ -24,7 +25,6 @@
     .home-about-1 {
         display: flex;
         flex-direction: column;
-        //min-height: 60vh;
 
         .container {
 
@@ -48,7 +48,6 @@
 // 40rem | 640px
 @media (min-width: 40rem) {
     .home-about-1 {
-        min-height: 60vh;
         
         .container {
 
@@ -70,7 +69,6 @@
 @media (min-width: 60rem) {
 
     .home-about-1 {
-        min-height: 70vh;
       
         .container {
             display: flex;
