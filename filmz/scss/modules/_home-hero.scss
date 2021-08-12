@@ -25,7 +25,7 @@
 // 1rem | 16px
 @media (min-width: 1rem) {
     .home-hero {
-        height: 50vh;
+        min-height: 50vh;
 
         .container {
             padding: 2em;
@@ -46,7 +46,7 @@
 // 40rem | 640px
 @media (min-width: 40rem) {
     .home-hero {
-        height: 60vh;
+        min-height: 60vh;
 
         .container {
             padding: 2.5em;
@@ -66,7 +66,7 @@
 @media (min-width: 60rem) {
 
     .home-hero {
-        height: 70vh;
+        min-height: 70vh;
 
         .container {
             padding: 3.5em;

@@ -24,7 +24,7 @@
     .home-about-1 {
         display: flex;
         flex-direction: column;
-        height: 60vh;
+        min-height: 60vh;
 
         .container {
 
@@ -48,7 +48,7 @@
 // 40rem | 640px
 @media (min-width: 40rem) {
     .home-about-1 {
-        height: 70vh;
+        min-height: 60vh;
         
         .container {
 
@@ -70,7 +70,7 @@
 @media (min-width: 60rem) {
 
     .home-about-1 {
-        height: 80vh;
+        min-height: 60vh;
       
         .container {
             display: flex;
