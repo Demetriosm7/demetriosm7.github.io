@@ -80,7 +80,7 @@
 @media (min-width: 60rem) {
 
     .home-about-2 {
-        height: 60vh;
+        min-height: 60vh;
       
         .container {
             display: flex;
