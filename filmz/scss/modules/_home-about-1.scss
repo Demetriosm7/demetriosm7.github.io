@@ -5,20 +5,16 @@
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
     padding: .5em;
-    max-width: 100%;
-    height: auto;
     
     .container {
         margin: 0 auto;
         padding: 2em;
-        height: auto;
 
         .about-text1 {
             align-items: center;
             text-align: center;
             padding: 2em;
             line-height: 3em;
-            height: auto;
         }
     }
 }
