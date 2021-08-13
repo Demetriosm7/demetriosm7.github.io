@@ -8,18 +8,13 @@
     
     .container {
         margin: 0 auto;
-        padding: 2em;
+        padding: .5em;
 
         .about-text1 {
             align-items: center;
             text-align: center;
-            padding: 1em;
-            line-height: 3em;
-            height: auto;
-        }
+            //padding: 2em;
 
-        .about-image1 {
-            object-fit: cover;
         }
     }
 }
@@ -30,7 +25,7 @@
     .home-about-1 {
         display: flex;
         flex-direction: column;
-        height: auto;
+        min-height: 60vh;
 
         .container {
 
@@ -43,6 +38,10 @@
                     font-size: 1em;
                 }
             }
+
+            .about-image1 {
+                padding: 2em;
+            }
         }
     }
 }
@@ -50,15 +49,19 @@
 // 40rem | 640px & 60em | 900px
 @media (min-width: 40em) and (max-width: 60em) {
     .home-about-1 {
-        height: auto;
+        min-height: 80vh;
         
         .container {
 
             .about-text1 {
 
                 h2 {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                 }
+            }
+
+            .about-image1 {
+                padding: 2em;
             }
         }
     }
@@ -68,7 +71,7 @@
 @media (min-width: 60em) {
 
     .home-about-1 {
-        height: auto;
+        min-height: 60vh;
       
         .container {
             display: flex;
@@ -77,9 +80,14 @@
             .about-text1 {
                 text-align: left;
 
-                h2 {
-                    font-size: 2em;
+                h1 {
+                    font-size: 3em;
                 }
+            }
+
+            .about-image1 {
+                max-width: 60%;
+                padding: 3em;
             }
         }
     }
