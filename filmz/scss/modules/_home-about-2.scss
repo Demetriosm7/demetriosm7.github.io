@@ -17,8 +17,13 @@
                 display: flex;
                 align-items: center;
                 text-align: center;
-                padding: 2em;
+                padding: 1em;
                 line-height: 3em;
+                height: auto;
+            }
+
+            .about-image2 {
+                object-fit: cover;
             }
         }
     }
@@ -42,12 +47,8 @@
                     justify-content: center;
     
                     h2 {
-                        font-size: 1.5em;
+                        font-size: 1em;
                     }
-                }
-
-                .about-image2 {
-                    padding: 2em;
                 }
             }
         }
@@ -66,15 +67,11 @@
                 .about-text2 {
 
                     h2 {
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                     }
                 }
-    
-                .about-image2 {
-                    padding: 2em;
-                }
             }
-            }
+        }
     }
 }
 
@@ -95,14 +92,9 @@
                 .about-text2 {
                     text-align: left;
     
-                    h1 {
-                        font-size: 3em;
+                    h2 {
+                        font-size: 2em;
                     }
-                }
-    
-                .about-image2 {
-                    max-width: 60%;
-                    padding: 3em;
                 }
             }
         }
