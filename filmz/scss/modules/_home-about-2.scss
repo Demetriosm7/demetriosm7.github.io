@@ -5,12 +5,13 @@
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
     padding: .5em;
-    height: auto;
     max-width: 100%;
+    height: auto;
     
     .container {
         margin: 0 auto;
         padding: 2em;
+        height: auto;
 
         .flex-container {
             
@@ -31,7 +32,7 @@
     .home-about-2 {
         display: flex;
         flex-direction: column;
-        min-height: 60vh;
+        height: auto;
 
         .container {
 
@@ -58,7 +59,7 @@
 // 40rem | 640px
 @media (min-width: 40em) {
     .home-about-2 {
-        min-height: 60vh;
+        height: auto;
         
         .container {
 
@@ -83,7 +84,7 @@
 @media (min-width: 60em) {
 
     .home-about-2 {
-        height: 80vh;
+        height: auto;
       
         .container {
             display: flex;

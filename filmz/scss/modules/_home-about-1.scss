@@ -11,6 +11,7 @@
     .container {
         margin: 0 auto;
         padding: 2em;
+        height: auto;
 
         .about-text1 {
             align-items: center;
@@ -27,7 +28,7 @@
     .home-about-1 {
         display: flex;
         flex-direction: column;
-        min-height: 60vh;
+        height: auto;
 
         .container {
 
@@ -51,7 +52,7 @@
 // 40rem | 640px & 60em | 900px
 @media (min-width: 40em) and (max-width: 60em) {
     .home-about-1 {
-        min-height: 80vh;
+        height: auto;
         
         .container {
 
@@ -73,7 +74,7 @@
 @media (min-width: 60em) {
 
     .home-about-1 {
-        min-height: 60vh;
+        height: auto;
       
         .container {
             display: flex;
