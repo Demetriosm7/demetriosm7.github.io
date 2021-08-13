@@ -4,7 +4,9 @@
     justify-content: center;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
-    height: 100vh;
+    padding: .5em;
+    max-width: 100%;
+    height: auto;
     
     .container {
         margin: 0 auto;
@@ -21,10 +23,11 @@
 
 // Media Quries
 // 1rem | 16px
-@media (min-width: 1rem) {
+@media (min-width: 1em) {
     .home-about-1 {
         display: flex;
         flex-direction: column;
+        min-height: 60vh;
 
         .container {
 
@@ -34,7 +37,7 @@
                 justify-content: center;
 
                 h2 {
-                    font-size: 1.7em;
+                    font-size: 1.5em;
                 }
             }
 
@@ -45,9 +48,10 @@
     }
 }
 
-// 40rem | 640px
-@media (min-width: 40rem) {
+// 40rem | 640px & 60em | 900px
+@media (min-width: 40em) and (max-width: 60em) {
     .home-about-1 {
+        min-height: 80vh;
         
         .container {
 
@@ -66,16 +70,14 @@
 }
 
 // 60rem | 900px
-@media (min-width: 60rem) {
+@media (min-width: 60em) {
 
     .home-about-1 {
+        min-height: 60vh;
       
         .container {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
 
             .about-text1 {
                 text-align: left;
