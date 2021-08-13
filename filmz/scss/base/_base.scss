@@ -22,11 +22,7 @@ body {
 
 .container {
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    height: auto; // This might be the issue
 }
 
 img {
