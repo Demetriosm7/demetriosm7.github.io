@@ -22,8 +22,7 @@
 }
 
 // Media Queries
-
-@media (min-width: 43.75em) {
+@media (min-width: 43.75em) { // 700px
     .home-about-2 {
         flex-direction: column;
 
@@ -33,14 +32,14 @@
     }
 }
 
-@media (min-width: 50em) { // 992px
+@media (min-width: 50em) { // 800px
     .home-about-2 {
         flex-direction: row-reverse;
     }
 }
 
 @media (min-width: 120em) { // 1392px
-    .home-about-1 {
+    .home-about-2 {
         flex-direction: row-reverse;
     }
 }
