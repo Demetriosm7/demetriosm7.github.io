@@ -1,94 +1,26 @@
 .home-about-1 {
-    background-color: $darkBrown2;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: $darkBrown2;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
-    padding: .5em;
-    
-    .container {
-        margin: 0 auto;
-        padding: 2em;
 
-        .about-text1 {
-            align-items: center;
-            text-align: center;
-            padding: 2em;
-            line-height: 3em;
-        }
+    .about-text-1 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .about-image-1 {
+        width: 50%;
+        text-align: center;
     }
 }
 
-// Media Quries
-// 1rem | 16px
-@media (min-width: 1em) {
+// Media Queries
+// 
+@media (max-width: 24em) {
     .home-about-1 {
         display: flex;
         flex-direction: column;
-        min-height: 60vh;
-
-        .container {
-
-            .about-text1 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                h1 {
-                    font-size: 1.3em;
-                }
-            }
-
-            .about-image1 {
-                padding: 1em;
-            }
-        }
-    }
-}
-
-// 40rem | 640px & 60em | 900px
-@media (min-width: 40em) and (max-width: 60em) {
-    .home-about-1 {
-        min-height: 80vh;
-        
-        .container {
-
-            .about-text1 {
-
-                h1 {
-                    font-size: 1.5rem;
-                }
-            }
-
-            .about-image1 {
-                padding: 2em;
-            }
-        }
-    }
-}
-
-// 60rem | 900px
-@media (min-width: 60em) {
-
-    .home-about-1 {
-        min-height: 60vh;
-      
-        .container {
-            display: flex;
-            flex-direction: row;
-
-            .about-text1 {
-                text-align: left;
-
-                h1 {
-                    font-size: 1.7em;
-                }
-            }
-
-            .about-image1 {
-                max-width: 60%;
-                padding: 3em;
-            }
-        }
     }
 }
