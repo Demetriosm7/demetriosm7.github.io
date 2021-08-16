@@ -3,10 +3,10 @@
   // styles go here
 }
 
-// 640px, 1024px, 1400px
+// 640px|40em, 1024px|64em, 1400px|87.5em
 $breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
 
-// 639px, 1023px, 1399px
+// 639px|39.9375em, 1023px|63.9375em, 1399px|87.4375em
 $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
 
 @mixin breakpoint-up($size){
