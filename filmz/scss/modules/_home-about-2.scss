@@ -1,9 +1,10 @@
 .home-about-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-direction: column;
     background-color: $black;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
-    display: flex;
-    flex-direction: row-reverse;
     align-items: center;
 
 
@@ -21,10 +22,25 @@
 }
 
 // Media Queries
-// 
-@media (max-width: 25em) {
+
+@media (min-width: 43.75em) {
     .home-about-2 {
-        display: flex;
         flex-direction: column;
+
+        .about-text-2 {
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media (min-width: 50em) { // 992px
+    .home-about-2 {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 120em) { // 1392px
+    .home-about-1 {
+        flex-direction: row-reverse;
     }
 }
