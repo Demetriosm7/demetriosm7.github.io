@@ -1,7 +1,6 @@
 .home-about-2 {
     display: flex;
     flex-direction: row-reverse;
-    flex-direction: column;
     background-color: $black;
     font-family: 'Avenir Roman,sans-serif';
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
@@ -22,7 +21,7 @@
 }
 
 // Media Queries
-@media (min-width: 43.75em) { // 700px
+@media (min-width: 1em) { // 700px
     .home-about-2 {
         flex-direction: column;
 

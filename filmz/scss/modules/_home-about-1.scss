@@ -1,6 +1,5 @@
 .home-about-1 {
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: $darkBrown2;
     font-family: 'Avenir Roman,sans-serif';
@@ -19,7 +18,7 @@
 }
 
 // Media Queries
-@media (min-width: 43.75em) { // 700px
+@media (min-width: 1em) { // 700px
     .home-about-1 {
         flex-direction: column;
 
