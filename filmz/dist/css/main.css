@@ -62,10 +62,10 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
 @media (min-width: 1em) {
   .home-hero {
-    min-height: 50vh;
+    min-height: 70vh;
   }
   .home-hero h1 {
-    font-size: 1em;
+    font-size: 1.4em;
   }
   .home-hero p {
     padding-top: 0.5em;
