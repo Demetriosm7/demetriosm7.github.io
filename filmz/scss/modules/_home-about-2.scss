@@ -11,7 +11,7 @@
     }
 
     .about-image-2 {
-        max-width: 50%;
+        //max-width: 50%;
         padding: 1em;
     }
     
@@ -24,7 +24,7 @@
 
         .about-text-2 {
             width: 100%;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
 
         .about-image-2 {
@@ -33,13 +33,13 @@
     }
 }
 
-@media (min-width: 50em) { // 800px
+@media (min-width: 42.1875em) { // 675px
     .home-about-2 {
         flex-direction: row-reverse;
 
         .about-text-2 {
             width: 50%;
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
         .about-image-2 {
@@ -48,13 +48,13 @@
     }
 }
 
-@media (min-width: 120em) { // 1392px
+@media (min-width: 80em) { // 1392px
     .home-about-2 {
         flex-direction: row-reverse;
 
         .about-text-2 {
             width: 50%;
-            font-size: 2.5em;
+            font-size: 2em;
         }
 
         .about-image-2 {
