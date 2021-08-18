@@ -1,7 +1,6 @@
 .home-about-1 {
     display: flex;
     align-items: center;
-    //justify-content: center;
     background-color: $darkBrown2;
     font-family: 'PT Serif', serif;
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
@@ -13,13 +12,13 @@
     }
 
     .about-image-1 {
-        width: 50%;
+        max-width: 50%;
         padding: 1em;
     }
 }
 
 // Media Queries
-@media (min-width: 1em) and (max-width: 49.99em) { // 700px
+@media (min-width: 1em) { // 700px
     .home-about-1 {
         flex-direction: column;
 
@@ -34,7 +33,7 @@
     }
 }
 
-@media (min-width: 50em) and (max-width: 119.99em) { // 800px
+@media (min-width: 50em) { // 800px
     .home-about-1 {
         flex-direction: row;
 
