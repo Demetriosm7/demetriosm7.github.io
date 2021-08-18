@@ -4,11 +4,13 @@
     background-repeat: no-repeat;
     background-position: center, center;
     resize: both;
-    font-family: 'Avenir Roman,sans-serif';
+    font-family: 'PT Serif', serif;
     border-bottom: opacify($color: $gold, $amount: 0.3) solid 7px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2em;
+
 }
 
 // Media Queries
@@ -54,7 +56,7 @@
         }
 
         p {
-            font-size: 3em;
+            font-size: 2em;
         }
     }
 }
