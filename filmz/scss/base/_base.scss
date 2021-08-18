@@ -20,15 +20,12 @@ body {
     min-height: 200vh;
 }
 
-.container {
-    max-width: 100%;
-    height: auto; // This might be the issue
-}
-
+/*
 img {
     max-width: 100%;
-    height: auto; // Also chech this for the issue
+    height: auto;
 }
+*/
 
 a {
     text-decoration: none;
