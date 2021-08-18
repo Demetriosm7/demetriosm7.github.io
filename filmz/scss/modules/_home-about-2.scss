@@ -7,15 +7,19 @@
     border-bottom: opacify($color: #c0810b, $amount: 0.3) solid 7px;
 
     .about-text-2 {
+        width: 50%;
         padding: 1em;
         text-align: center;
     }
 
     .about-image-2 {
+        width: 50%;
         padding: 1em;
     }
     
 }
+
+/*
 
 // Media Queries
 @media (min-width: 1em) and (max-width: 49.99em) { // 700px
@@ -62,3 +66,4 @@
         }
     }
 }
+*/
