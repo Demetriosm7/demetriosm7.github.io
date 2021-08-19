@@ -1,6 +1,5 @@
 // Portfolio Styles and Media Queries
 .portfolio {
-    //margin: 5em 0 0;
 
     figure {
         margin: 0;
@@ -40,15 +39,13 @@
     }
 }
 
-// 20em | 320px
-@media (min-width: 20em) { 
+@media (min-width: 20em) { // 320px
     .portfolio h1 {
         font-size: 1.5rem;
     }
 }
 
-// 37em | 480px
-@media (min-width: 37em) {
+@media (min-width: 37em) { // 480px
     .portfolio {
         .portfolio-item {
             width: 50%;
@@ -72,9 +69,9 @@
     }
 }
 
-// 60em | 960px
-@media (min-width: 60em) {
+@media (min-width: 60em) { // 960 px
     .portfolio {
+
         .portfolio-item {
             width: 33.3333334%;
             float: left;

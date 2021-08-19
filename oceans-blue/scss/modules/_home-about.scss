@@ -1,13 +1,13 @@
 // Home-About Styles and Media Queries
 .container {
+
     .home-about {
+
         .home-about-textbox {
             background-color: $oceanBlue;
             color: white;
             padding: 3em;    
-            //width: 30%;
-            font-size: 1em;
-            //margin-left: -2.5%;   
+            font-size: 1em; 
             outline: 3px solid $turquoise;
             outline-offset: -2.5em;
             line-height: 140%;
@@ -21,7 +21,6 @@
                 color: $turquoise;
                 background-color: $oceanBlue;
                 padding: 0 .145em;
-                //top: 1em;
             }
 
             p {
@@ -36,10 +35,35 @@
 }
 
 // Media Queries
-// 20em | 320px
-@media (min-width: 20em) {
+@media (min-width: 1em) { // 16px
     .container {
+
         .home-about {
+
+            .home-about-textbox {
+                width: 100%;
+                font-size: 1.3rem;
+            }
+
+            .home-about-textbox h1 {
+                font-size: 1.2rem;
+                top: 1.6em;
+                padding: 0 .325em;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+@media (min-width: 20em) { // 320px
+    .container {
+
+        .home-about {
+            
             .home-about-textbox {
                 width: 100%;
                 font-size: 1.3rem;
@@ -59,8 +83,7 @@
     }
 }
 
-// 60em | 960 px
-@media (min-width: 60em) {
+@media (min-width: 60em) { // 960
     .container {
 
         .home-about {
@@ -73,7 +96,7 @@
 
             .home-about-textbox {
                 width: 50%;
-                padding: 4em;
+                padding: 3em;
                 outline-offset: -2.5em;
                 margin-left: -2%;
                 top: -5em;

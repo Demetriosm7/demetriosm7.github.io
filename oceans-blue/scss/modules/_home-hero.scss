@@ -3,6 +3,9 @@
     background-image: url(../../images/night2-imleedh-ali-Uf-_p8zZiT8-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10em 0;
     color: $white;
 
@@ -25,8 +28,7 @@
 }
 
 // Media Queries
-// 20em | 320px
-@media (min-width: 20em) {
+@media (min-width: 20em) {  // 320px
     .home-hero {
         height: 100vh;
         padding-top: 17vh;
@@ -38,12 +40,11 @@
     }
 
     .home-hero h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
 }
 
-// 60em | 960px
-@media (min-width: 60em) {
+@media (min-width: 60em) { //960px
     .home-hero {
         height: 100vh;
         padding-top: 17vh;

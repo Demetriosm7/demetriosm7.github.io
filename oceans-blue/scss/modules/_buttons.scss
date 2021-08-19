@@ -38,7 +38,7 @@
 .cta-button1 {
     background: $white;
     color: black;
-    
+    box-sizing: border-box;
     text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
@@ -61,7 +61,7 @@
 .cta-button2 {
     background: $white;
     color: black;
-   
+    box-sizing: border-box;
     text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
@@ -81,39 +81,58 @@
 }
 
 // Media Queries
-// 20em | 320px
-@media (min-width: 20em) {
+@media (min-width: 1em) { // 16px
     .hero-button {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .portfolio-button {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .cta-button1 {
-        box-sizing: border-box;
         display: inline-block;
         padding: .5em .5em;
-        width: 50%;
+        width: 60%;
         margin-top: 0em;
         margin-bottom: 0.5em;
         //margin: 0;
     }
 
     .cta-button2 {
-        box-sizing: border-box;
         display: inline-block;
         padding: .5em .5em;
-        width: 50%;
+        width: 60%;
         //margin-top: 0.5em;
         margin-bottom: 0.5em;
         //margin: 0;
     }
 }
 
-// 60em | 960 px
-@media (min-width: 60em) {
+@media (min-width: 40em) { // 959.9984px
+
+    .hero-button {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-button {
+        font-size: 1.3rem;
+    }
+
+    .cta-button1 {
+        display: inline-block;
+        width: 50%;
+        padding: .5em .5em;
+    }
+
+    .cta-button2 {
+        display: inline-block;
+        width: 50%;
+        padding: .5em 2em;
+    }
+}
+
+@media (min-width: 60em) { // 960px
 
     .hero-button {
         font-size: 1.5rem;
@@ -125,11 +144,13 @@
 
     .cta-button1 {
         display: inline;
+        width: 60%;
         padding: .5em .5em;
     }
 
     .cta-button2 {
         display: inline;
+        width: 60%;
         padding: .5em 2em;
     }
 }

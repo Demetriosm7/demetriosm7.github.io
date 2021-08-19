@@ -32,9 +32,9 @@
 
 // Media Queries
 // 20em | 320px
-@media (min-width: 20em) {
+@media (min-width: 1em) {
     .cta {
-        height: 80vh;
+        min-height: 80vh;
         padding-top: 5vh;
 
         .title {
