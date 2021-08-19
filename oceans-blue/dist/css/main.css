@@ -20,6 +20,9 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   background-image: url(../../images/night2-imleedh-ali-Uf-_p8zZiT8-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10em 0;
   color: #ffffff;
 }
@@ -49,7 +52,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   }
 
   .home-hero h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 60em) {
@@ -92,6 +95,21 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   color: #00eeff;
 }
 
+@media (min-width: 1em) {
+  .container .home-about .home-about-textbox {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .container .home-about .home-about-textbox h1 {
+    font-size: 1.2rem;
+    top: 1.6em;
+    padding: 0 0.325em;
+  }
+  .container .home-about p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
 @media (min-width: 20em) {
   .container .home-about .home-about-textbox {
     width: 100%;
@@ -118,7 +136,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   }
   .container .home-about .home-about-textbox {
     width: 50%;
-    padding: 4em;
+    padding: 3em;
     outline-offset: -2.5em;
     margin-left: -2%;
     top: -5em;
@@ -170,6 +188,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 .cta-button1 {
   background: #ffffff;
   color: black;
+  box-sizing: border-box;
   text-align: center;
   font-size: 1rem;
   text-transform: uppercase;
@@ -188,6 +207,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 .cta-button2 {
   background: #ffffff;
   color: black;
+  box-sizing: border-box;
   text-align: center;
   font-size: 1rem;
   text-transform: uppercase;
@@ -203,30 +223,49 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   color: black;
 }
 
-@media (min-width: 20em) {
+@media (min-width: 1em) {
   .hero-button {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .portfolio-button {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .cta-button1 {
-    box-sizing: border-box;
     display: inline-block;
     padding: 0.5em 0.5em;
-    width: 50%;
+    width: 60%;
     margin-top: 0em;
     margin-bottom: 0.5em;
   }
 
   .cta-button2 {
-    box-sizing: border-box;
     display: inline-block;
     padding: 0.5em 0.5em;
-    width: 50%;
+    width: 60%;
     margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 40em) {
+  .hero-button {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-button {
+    font-size: 1.3rem;
+  }
+
+  .cta-button1 {
+    display: inline-block;
+    width: 50%;
+    padding: 0.5em 0.5em;
+  }
+
+  .cta-button2 {
+    display: inline-block;
+    width: 50%;
+    padding: 0.5em 2em;
   }
 }
 @media (min-width: 60em) {
@@ -240,11 +279,13 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
   .cta-button1 {
     display: inline;
+    width: 60%;
     padding: 0.5em 0.5em;
   }
 
   .cta-button2 {
     display: inline;
+    width: 60%;
     padding: 0.5em 2em;
   }
 }
@@ -345,9 +386,9 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   font-size: 0.9em;
 }
 
-@media (min-width: 20em) {
+@media (min-width: 1em) {
   .cta {
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 5vh;
   }
   .cta .title {
@@ -443,49 +484,64 @@ header {
 }
 header .logo {
   font-family: "Fredericka the Great", cursive;
-  font-size: 2rem;
   color: #00eeff;
   padding: 0 0.5em;
 }
 header nav ul {
   list-style-type: none;
 }
-header nav li {
+header nav ul li {
   display: inline-block;
-  margin: 0.5em;
 }
-header nav a {
+header nav ul li a {
   color: #ffffff;
   text-transform: uppercase;
-  padding: 0.5rem;
-  font-size: 0.8rem;
 }
-header nav a:hover, header nav a:focus {
+header nav ul li a:hover, header nav ul li a:focus {
   color: #00eeff;
 }
 
-@media (min-width: 20em) {
+@media (min-width: 1em) {
   header .logo {
     text-align: center;
+    font-size: 1.5em;
   }
-
   header nav {
     text-align: center;
   }
-  header nav a {
+  header nav ul li {
+    margin: 0.3em;
+  }
+  header nav ul li a {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 20em) {
+  header .logo {
+    font: 1.5rem;
+  }
+  header .logo ul li {
+    margin: 0.3em;
+  }
+  header .logo ul li a {
+    padding: 0.5rem;
     font-size: 0.8rem;
   }
 }
 @media (min-width: 60em) {
   header .logo {
     float: left;
+    font-size: 2rem;
   }
-
   header nav {
     float: right;
   }
-  header nav a {
-    font-size: 0.8rem;
+  header nav ul li {
+    margin: 0.5em;
+  }
+  header nav ul li a {
+    padding: 0.5rem;
+    font-size: 1rem;
   }
 }
 footer {
@@ -500,18 +556,18 @@ footer .column-3 {
 footer .column-3 a {
   padding: 0.3em;
 }
-footer .column-1 li {
-  padding: 0.3em;
-}
-footer ul {
-  display: inline-block;
-}
-footer ul .paragraph-color {
+footer .column-1 .unstyled-list .paragraph-color {
   color: #00eeff;
   font-size: 1.2rem;
 }
-footer a {
+footer .column-1 .unstyled-list li {
+  padding: 0.3em;
+}
+footer .column-1 .unstyled-list li a {
   color: #ffffff;
+}
+footer .column-1 .unstyled-list li a:hover, footer .column-1 .unstyled-list li a:focus {
+  color: #00eeff;
 }
 
 [class^=column-] {
