@@ -1,3 +1,4 @@
+// Footer Styles and Media Queries
 footer {
     background: $darkGray;
     color: $white;
@@ -13,22 +14,25 @@ footer {
     }
 
     .column-1 {
-        li {
-            padding: .3em;
-        }
-    }
 
-    ul {
-        display: inline-block;
+        .unstyled-list {
+    
+            .paragraph-color {
+                color: $turquoise;
+                font-size: 1.2rem;
+            }
 
-        .paragraph-color {
-            color: $turquoise;
-            font-size: 1.2rem;
-        }
-    }
+            li {
+                padding: .3em;
 
-    a {
-        color: $white;
+                a {
+                    color: $white;
+                }
+                a:hover, a:focus {
+                    color: $turquoise;
+                }
+            }
+        }        
     }
 }
 
@@ -42,7 +46,7 @@ footer {
 }
 
 // Media Queries
-@media (min-width: 40rem) {
+@media (min-width: 40rem) { //640px
     [class^=column-] {
         float: left;
         padding: 0.25em;

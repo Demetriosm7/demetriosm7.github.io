@@ -9,7 +9,6 @@ header {
 
     .logo {
         font-family: 'Fredericka the Great', cursive;
-        font-size: 2rem;
         color: $turquoise;
         padding: 0 .5em;
     }
@@ -18,55 +17,96 @@ header {
 
         ul {
             list-style-type: none;
-    
-        }
-    
-        li {
-            display: inline-block;
-            margin: .5em;
-        }
-    
-        a {
-            //padding: 1em;
-            color: $white;
-            text-transform: uppercase;
-            padding: .5rem;
-            font-size: .8rem;
-        }
-    
-        a:hover, a:focus {
-            color: $turquoise;
-        }
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $white;
+                    text-transform: uppercase;
+                    //font-size: .8rem;
+                }
+
+                a:hover, a:focus {
+                    color: $turquoise;
+                }
+            }
+        }  
     }
 }
 
 // Media Queries
-// 20em | 320px
-@media (min-width: 20em) {
-    header .logo {
-        text-align: center;
-    }
+@media (min-width: 1em) { // 16px
+    header {
 
-    header nav {
-        text-align: center;
+        .logo {
+            text-align: center;
+            font-size: 1.5em;
+        }
 
-        a {
-            font-size: .8rem;
+        nav {
+            text-align: center;
+
+            ul {
+
+                li {
+                    margin: .3em;
+
+                    a {
+                        //padding: .3rem;
+                        font-size: .7rem;
+                    }
+                }
+            }
         }
     }
 }
 
-// 60em | 960px
-@media (min-width: 60em) {
-    header .logo {
-        float: left;
+@media (min-width: 20em) { // 320px
+    header {
+
+        .logo {
+            font: 1.5rem;
+
+            ul {
+
+                li {
+                    margin: .3em;
+
+                    a {
+                        padding: .5rem;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
     }
+}
 
-    header nav {
-        float: right;
+@media (min-width: 60em) { //960px
+    header {
 
-        a {
-            font-size: .8rem;
+        .logo {
+            float: left;
+            font-size: 2rem;
+        }
+
+        nav {
+            float: right;
+
+            ul {
+
+                li {
+                    margin: .5em;
+
+                    a {
+                        padding: .5rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            
         }
     }
 }
