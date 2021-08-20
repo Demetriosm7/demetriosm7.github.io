@@ -43,7 +43,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
 @media (min-width: 20em) {
   .home-hero {
-    height: 100vh;
+    min-height: 80%;
     padding-top: 17vh;
   }
   .home-hero .title {
@@ -225,11 +225,11 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
 @media (min-width: 1em) {
   .hero-button {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .portfolio-button {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .cta-button1 {
@@ -362,25 +362,23 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   }
 }
 .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1em;
   background-color: #0e0e58;
-  padding: 10em 0;
   color: white;
 }
-.cta h1 {
-  font-size: 1.9rem;
+.cta .cta-container .title {
   color: white;
-}
-.cta p {
-  padding: 1.25em;
-}
-.cta .container .title {
-  margin-top: 2em;
-  margin-bottom: 2em;
   font-weight: 900;
   padding: 1.25em;
   line-height: 180%;
 }
-.cta .container .title span {
+.cta .cta-container .title span {
   font-weight: 300;
   display: block;
   font-size: 0.9em;
@@ -388,30 +386,30 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
 @media (min-width: 1em) {
   .cta {
-    min-height: 80vh;
-    padding-top: 5vh;
+    min-height: 40vh;
   }
-  .cta .title {
+  .cta .cta-container .title {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    font-size: 1.5rem;
   }
-
-  h1 {
-    font-size: 1.9rem;
+}
+@media (min-width: 40em) {
+  .cta {
+    min-height: 50vh;
+  }
+  .cta .cta-container .title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 2rem;
   }
 }
 @media (min-width: 70em) {
   .cta {
-    height: 80vh;
-    padding-top: 12vh;
+    min-height: 60vh;
   }
-  .cta .title {
-    margin-top: 3em;
-    margin-bottom: 1.5em;
-  }
-
-  h1 {
-    font-size: 2.3rem;
+  .cta .cta-container .title {
+    font-size: 2.4em;
   }
 }
 .footer_copyright {
@@ -513,19 +511,19 @@ header nav ul li a:hover, header nav ul li a:focus {
     margin: 0.3em;
   }
   header nav ul li a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 20em) {
   header .logo {
-    font: 1.5rem;
+    font: 1.8rem;
   }
   header .logo ul li {
     margin: 0.3em;
   }
   header .logo ul li a {
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 60em) {
@@ -541,7 +539,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   }
   header nav ul li a {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 footer {
