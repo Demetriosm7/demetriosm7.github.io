@@ -30,7 +30,7 @@
 // Media Queries
 @media (min-width: 20em) {  // 320px
     .home-hero {
-        height: 100vh;
+        min-height: 80%;
         padding-top: 17vh;
 
         .title {

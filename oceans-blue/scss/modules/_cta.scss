@@ -1,22 +1,18 @@
 .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em;
     background-color: $oceanBlue;
-    padding: 10em 0;
     color: white;
 
-    h1 {
-        font-size: 1.9rem;
-        color: white;
-    }
-
-    p {
-        padding: 1.25em;
-    }
-
-    .container {
+    .cta-container {
         
         .title {
-            margin-top: 2em;
-            margin-bottom: 2em;
+           color: white;
             font-weight: 900;
             padding: 1.25em;
             line-height: 180%;
@@ -27,40 +23,51 @@
                 font-size: .9em;
             }
         }
-    }
+    }    
 }
 
 // Media Queries
-// 20em | 320px
-@media (min-width: 1em) {
+@media (min-width: 1em) { // 16px
     .cta {
-        min-height: 80vh;
-        padding-top: 5vh;
+        min-height: 40vh;
 
-        .title {
-            margin-top: .5em;
-            margin-bottom: .5em;
+        .cta-container {
+
+            .title {
+                margin-top: .5em;
+                margin-bottom: .5em;
+                font-size: 1.5rem;
+            }
         }
-    }
+    }    
+}
 
-    h1 {
-        font-size: 1.9rem;
-    }
+@media (min-width: 40em) { // 16px
+    .cta {
+        min-height: 50vh;
+
+        .cta-container {
+
+            .title {
+                margin-top: .5em;
+                margin-bottom: .5em;
+                font-size: 2rem;
+            }
+        }
+    }    
 }
 
 // 60em | 960px
 @media (min-width: 70em) {
     .cta {
-        height: 80vh;
-        padding-top: 12vh;
+        min-height: 60vh;
+        //padding-top: 12vh;
+        
+        .cta-container {
 
-        .title {
-            margin-top: 3em;
-            margin-bottom: 1.5em;
+            .title {
+                font-size: 2.4em;
+            }
         }
-    }
-
-    h1 {
-        font-size: 2.3rem;
     }
 }
