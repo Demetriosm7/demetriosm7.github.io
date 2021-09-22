@@ -1,0 +1,25 @@
+.section-four {
+    //background-color: #824936;
+    background-color: $offWhite;
+    color: black;
+    padding: 4em 0;
+
+    .container {
+        margin: 0 auto;
+        width: 85%;
+        max-width: 1128px;
+
+        .row {
+            width: 100%;
+
+            .col {
+
+                .section-title {
+                    font-size: 2rem;
+                    color: $darkGreen;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.section-two {
+    padding: 4em 0;
+
+    .container {
+        margin: 0 auto;
+        width: 85%;
+        max-width: 1128px;
+
+        .section-title {
+            font-size: 2.25rem;
+            color: $darkGreen;
+            margin-bottom: 3rem;
+        }
+
+        .section-title--dark {
+            text-align: center;
+            color: $darkGreen;
+        }
+
+        .row {
+
+            .col {
+
+                .h3__title {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 53.75rem) {
+
+}

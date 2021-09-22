@@ -1,0 +1,137 @@
+footer {
+    background: #333;
+    color: white;
+    margin-top: auto;
+    padding-top: 2em;
+
+    .column-3 {
+        padding-bottom: 2.5em;
+        font-size: 1rem;
+        
+        a {
+            padding: .3em;
+        }
+    }
+
+    .column-1 {
+        padding-bottom: 2.5rem;
+
+        .unstyled-list {
+    
+            .paragraph-header {
+                color: #ffffff;
+                font-size: 1.5rem;
+            }
+
+            li {
+                padding: .3em;
+
+                a {
+                    font-size: 1rem;
+                    color: white;
+                }
+                a:hover, a:focus {
+                    color: $verylightGray;
+                }
+            }
+        }        
+    }
+}
+
+[class^=column-] {
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=column-] :first-of-type {
+    margin-top: 0;
+}
+
+// Media Quries
+@media (min-width: 40rem) {// 40rem | 640px
+    [class^=column-] {
+        float: left;
+        padding: 0.25em;
+        margin-top: 0;
+    }
+
+    [class^=column-]:first-of-type {
+        padding-left: 0;
+    }
+    
+    [class^=column-]:last-child {
+        padding-right: 0;
+    }
+
+    .column-3 {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        text-align: center;
+    }
+
+    .column-1 {
+        width: 25%;
+        text-align: center;
+    }
+
+    footer {
+
+        .column-1 {
+            .unstlyed-list {
+                li {
+                    font-size: .9em;    
+
+                    .paragraph-header {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 50.875rem) { // 50.875rem | 814px
+    [class^=column-] {
+        float: left;
+        padding: 0.25em;
+        margin-top: 0;
+    }
+
+    [class^=column-]:first-of-type {
+        padding-left: 0;
+    }
+    
+    [class^=column-]:last-child {
+        padding-right: 0;
+    }
+
+    .column-3 {
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        text-align: center;
+    }
+
+    .column-1 {
+        width: 25%;
+        text-align: center;
+    }
+
+    footer {
+
+        .column-1 {
+            .unstlyed-list {
+                    
+                li {
+                    font-size: 1em;    
+                    
+                    .paragraph-header {
+                        font-size: 1.2em;
+
+                    }
+                }
+            }
+        }
+    }
+}
