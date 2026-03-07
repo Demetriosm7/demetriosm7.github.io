@@ -1,0 +1,91 @@
+// Section 1 (Start)
+#section1 {
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	background: transparent;
+	flex-direction: row;
+	border-bottom: #b7b7b7 3px solid;
+	align-items: center;
+}
+
+#section1 .container1 {
+	flex: 1;
+	background: transparent;
+	padding: 10px;
+	font-size: 25px;
+	color: #000;
+	margin: 3px;
+}
+
+#section1 .container1 .title h1 {
+	margin-bottom: 10px;
+	padding: 10px;
+	font-family: 'Neucha', sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+#section1 .container1 .title h3 {
+	font-size: 25px;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #B0D1FF;
+	border-radius: 10px;
+}
+
+#section1 .container1 .title p {
+	font-size: 23px;
+	text-align: center;
+	padding: 10px;
+}
+
+#section1 .container2 {
+	flex: 1;
+	background: transparent;
+	padding: 10px;
+	text-align: center;
+	color: #000;
+	margin: 3px;
+}
+
+#section1 .container2 img {
+	max-height: 100%;
+	max-width: 100%;
+}
+// Section 1 (End)
+
+.latestwork p {
+	margin-top: 50px;
+
+	text-align: center;
+	font-family: 'Neucha', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	color: #000;
+}
+
+// Section 2 (Start)
+#showcase2 {
+	min-height: 450px;
+	padding-bottom: 50px;
+	background-size: 100%;
+	text-align: center;
+	color: #000;
+	background-color: #f4f4f4;
+}
+
+#showcase2 .container h1 {
+	margin-top: 75px;
+	margin-bottom: 10px;
+	font-size: 35px;
+}
+
+#showcase2 .container p {
+	font-size: 25px;
+	text-align: center;
+}
+// Section 2 (End)

@@ -1,0 +1,60 @@
+.home-hero {
+    background-image: url(../../images/film4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    resize: both;
+    font-family: 'PT Serif', serif;
+    border-bottom: opacify($color: $gold, $amount: 0.3) solid 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+
+}
+
+// Media Queries
+// 1rem | 16px
+@media (min-width: 1em) { // 16px
+    .home-hero {
+        min-height: 70vh;
+
+        h1 {
+            font-size: 1.4em;
+        }
+
+        p {
+            padding-top: .5em;
+            font-size: 1em;
+        }
+    }
+}
+
+@media (min-width: 35em) { // 560px
+    .home-hero {
+        min-height: 60vh;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.8em;
+        }
+    }
+}
+
+@media (min-width: 60em) { // 960px
+
+    .home-hero {
+        min-height: 70vh;
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 2em;
+        }
+    }
+}

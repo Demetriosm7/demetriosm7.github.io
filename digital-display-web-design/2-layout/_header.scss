@@ -1,0 +1,46 @@
+header {
+    background: #2f382b;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-left: 20px;
+    min-height: 70px;
+    border-bottom: #c0d86a 3px solid;
+  }
+  
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding {
+    float: left;
+  }
+  
+  header #branding h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  header .highlight, header .current a {
+    color: #c0d86a;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    color: #cccccc;
+    font-weight:bold;
+  }

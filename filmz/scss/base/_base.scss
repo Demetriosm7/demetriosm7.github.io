@@ -1,0 +1,31 @@
+// Global Styles
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: ease-in-out 250ms;
+}

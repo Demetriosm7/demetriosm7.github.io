@@ -1,0 +1,133 @@
+// Header
+.header {
+  background-color: $mocha;
+
+// Hamburber Menu Open Styles
+&.open {
+  
+  .overlay {
+    display: block;
+  }
+
+  .header__toggle {
+
+    > span:first-child {
+      transform: rotate(55deg);
+    }
+  
+    > span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    > span:last-child {
+      transform: rotate(-55deg);
+    }
+  }
+}
+
+  // Overlay
+  .overlay {
+    background-image: linear-gradient($mocha, transparent);
+    transition: color 350ms ease-in-out;
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  // Header Navigation Links
+  nav {
+    position: relative;
+    background-color: $mocha;
+    padding-top: 1.0625rem; // 17px
+    padding-bottom: 1.0625rem; // 17px
+  }
+
+  &__links {
+
+    a {
+      position: relative;
+      font-size: $font-medium;
+      color: $mediumBrown;
+      transition: color 350ms ease-in-out;
+      font-weight: 500;
+
+      &:not(:last-child){
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 0.15625rem;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        background: $darkBrown;
+        transition: opacity 350ms ease-in-out;
+        opacity: 0;
+      }
+
+      &:hover {
+        color: $darkBrown;
+        
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // Header Logo
+  &__logo {
+
+    img {
+      width: 5rem; // 45px
+      height: 5rem; // 54px
+    }
+  }
+
+  // Mobile Menu Toggle
+  &__toggle {
+
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $darkBrown;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child){
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  &__menu {
+    background: $offWhite;
+    position: absolute;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 9px;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+
+    // Overlay Navigation Links
+      a {
+        color: $mediumBrown;
+        padding: 0.625rem;
+        display: block;
+        text-align: center;
+
+        &:hover {
+          color: $darkBrown;
+        }
+      }
+  }  
+}
+

@@ -1,0 +1,55 @@
+// Portfolio Section (Start)
+.portfolio-title p {
+	padding-top: 55px;
+	text-align: center;
+	font-family: 'Neucha', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	color: #000;
+}
+
+#portfolio-cards {
+	margin: 20px auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	max-width: 1040px;
+	padding: 0px;
+	text-align: center;
+	clear: both;
+ 	background-color: transparent;
+}
+
+#portfolio-cards .box {
+	margin: 10px 10px;
+	width: 275px auto;
+	display: inline-block;
+  	padding: 20px 10px;
+  	border-radius: 10px;
+ 	border: 1px solid #BFBFBF;
+ 	background-color: #fff;
+  	-moz-box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portfolio-cards .box:hover {
+	opacity: 0.7;
+}
+
+#portfolio-cards img {
+	height: 165px;
+	width: 300px;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#portfolio-cards .box h3, p {
+	text-align: left;
+	margin: 0px auto;
+	text-decoration: none;
+}
+
+#portfolio-cards .box a {
+	text-decoration: none;
+}
+// Portfolio Section (End)

@@ -1,0 +1,53 @@
+.intro {
+    background-color: #23424A;
+    padding: 12.5rem 0;
+    text-align: center;
+    color: white;
+
+    .container {
+
+        .intro__title {
+            font-size: 3rem;  
+            padding: 1rem 0;  
+        }
+
+        .intro__text {
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 1rem;
+            padding: 1rem 0;  
+            color: white;
+            margin: 0 0 .25em;
+        }
+    }
+}
+
+@media (min-width: 53.75rem) { // 860px
+    .row {
+        display: flex;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col + .col {
+        margin-left: 5em;
+    }
+
+    .intro {
+
+        .container {
+        
+            .intro__title {
+                font-size: 3.75em;   
+            }
+
+            .intro__text {
+                letter-spacing: 10px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+

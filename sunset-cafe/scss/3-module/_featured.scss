@@ -1,0 +1,120 @@
+.featured {
+
+    img {
+        @include breakpoint-up(large){
+            height: 155px;
+            width: 205px;
+        }
+
+        @include breakpoint-down(medium){
+            height: 155px;
+            width: 205px;
+        }
+
+        @include breakpoint-down(small){
+            height: 195px;
+            width: 245px;
+        }
+    }
+
+    &__icon {
+        @include breakpoint-up(large){
+            text-align: left;
+        }
+
+        @include breakpoint-down(medium){
+            text-align: center;
+        }
+
+        @include breakpoint-down(small){
+            text-align: center;
+        }
+    }
+
+    &__intro {
+        font-size: 1.125rem; //18px
+        margin-top: 1.5rem; // 24px
+        margin-right: 1.5rem; //24px
+        margin-bottom: 1.5rem; // 24px
+        margin-left: 1.5rem; //24px
+
+        @include breakpoint-up(large){
+            text-align: left;
+            padding-top: 2.25rem; //36px
+            padding-bottom: 2.25rem; //36px
+        }
+
+        @include breakpoint-down(medium){
+            text-align: left;
+        }
+
+        @include breakpoint-down(small){
+            text-align: center;
+        }
+    }
+
+    &__grid {
+        background-color: $offWhite;
+        
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        margin-top: 1rem; // 0.0625px
+        padding: 0.9375rem; // 15px
+
+        @include breakpoint-up(medium){
+            flex: 0 0 50%;
+        }
+
+        @include breakpoint-up(large){
+            flex: 1;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        color: $darkBrown;
+        line-height: 3rem; // 48px
+        margin-bottom: .5rem; // 8px
+
+        @include breakpoint-up(large){
+            font-size: 1.5rem; // 24px
+        }
+
+        @include breakpoint-down(medium){
+            font-size: 1.5rem; // 24px
+            text-align: center;
+        }
+
+        @include breakpoint-down(small){
+            font-size: 1.5rem; // 24px
+            text-align: center;
+        }
+    }
+
+    &__description {
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 1.5;
+        color: $darkBrown;
+        margin-bottom: 1rem; // 0.0625px
+        
+        @include breakpoint-up(large){
+            font-size: 1.1875rem; // 19px
+        }
+
+        @include breakpoint-down(medium){
+            font-size: 1.1875rem; // 19px
+            text-align: center;
+        }
+
+        @include breakpoint-down(small){
+            font-size: 1.1875rem; // 19px
+            text-align: center;
+        }
+    }
+}

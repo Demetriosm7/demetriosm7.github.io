@@ -1,0 +1,56 @@
+// Global
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Container
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1128px;
+    position: relative;
+}
+
+.row {
+    width: 100%;
+}
+
+// Typography
+h1, h2 {
+    margin-top: 0;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    transition: ease-in-out 50ms;
+}

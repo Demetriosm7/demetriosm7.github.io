@@ -1,0 +1,119 @@
+// Global
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 200vh;
+  font-size: $font-small;
+  color: black;  
+
+  @include breakpoint-up(large){
+    font-size: $font-medium;
+  }
+}
+
+// Text
+h1, h2, h3 {
+  margin-top: 0px;
+  font-weight: 300;
+  line-height: 3rem; // 48px
+}
+
+h1 {
+  color: $darkBrown;
+  font-size: 2rem; //32px
+  margin-top: 1.5rem; // 24px
+  margin-bottom: 1.5rem; // 24px
+  
+  @include breakpoint-up(large){
+      font-size: $font-xlarge;
+  }
+}
+
+h2 {
+  font-size: 1.875rem; // 30px
+  margin-bottom: 1.5625rem; // 25px
+
+  @include breakpoint-up(large){
+    font-size: 2.25rem; // 36px
+    margin-bottom: 2.25rem; // 36px
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+// Spacing
+.container {
+  &--padall {
+    padding-top: 2.25rem; //36px
+    padding-right: 1.5rem; //24px
+    padding-bottom: 2.25rem; //36px
+    padding-left: 1.5rem; //24px
+  }
+
+  &--padtb {
+    padding-top: 2.25rem; //36px
+    padding-bottom: 2.25rem; //36px
+  }
+
+  &--padrl {
+    padding-right: 1.5rem; //24px
+    padding-left: 1.5rem; //24px
+  }
+
+  &--padt {
+    padding-top: 2.125rem; //34px
+  }
+
+  &--padr {
+    padding-right: 1.5rem; //24px
+  }
+
+  &--padb {
+    padding-bottom: 2.125rem; //34px
+  }
+
+  &--padl {
+    padding-left: 1.5rem; //24px
+  }
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+      justify-content: space-between;
+  }
+
+  &-jc-c {
+      justify-content: center;
+  }
+
+  &-ai-c {
+      align-items: center;
+  }
+}
+
+// Global Paragraphs
+.global__paragraphs{
+  text-align: center;
+}

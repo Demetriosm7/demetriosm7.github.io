@@ -1,0 +1,69 @@
+// Variables
+
+// Color Variables
+
+// Black
+$black: #000000;
+
+// Brown
+$darkBrown: #32231a;
+$darkBrown2: #422c03;
+$mediumBrown: #bf781d;
+$lightBrown: #daa377;
+$mocha: #fccda6;
+
+// Blue
+$blue: #0213ff;
+$lightBlue: #5a63e4;
+
+// Gray
+$darkGray: #404040;
+$mediumGray: #646262;
+$lightGray: #878787;
+$verylightGray: #d1d1d1;
+
+// Green
+$darkGreen: #23424A;
+
+// Orange
+$orange: #ffa500;
+$gold: #c0810b;
+$marigold: #f5a614;
+
+// White
+$white: #ffffff;
+$lightTan: #dbccae;
+$offWhite: #f0e6d0;
+$floralWhite: #fef8ec;
+
+// Font Size Variables
+$font-small: 0.875rem; // 14px
+$font-medium: 1.125rem; // 18px
+$font-large: 1.25rem; // 20px
+$font-xlarge: 2.75rem; // 44px
+$font-xxlarge: 3.125rem; // 50px
+
+/*
+// Breakpoints
+@media (min-width: 64em){
+  // styles go here
+}
+
+// 640px|40em, 1024px|64em, 1400px|87.5em
+$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+
+// 639px|39.9375em, 1023px|63.9375em, 1399px|87.4375em
+$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
+
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}
+*/

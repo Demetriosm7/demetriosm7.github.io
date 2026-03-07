@@ -1,0 +1,39 @@
+body {
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    //display: flexbox;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .button_1 {
+    height: 37px;
+    background: #c0d86a;
+    border: 0;
+    border-radius: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+  
+  }
+  
+  .dark {
+    padding: 15px;
+    background: #878887;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,16 @@
+// Media Queries (Start)
+@media screen and (max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+        .about-section1 {
+            flex-direction: column;
+        }
+        #section1 {
+            flex-direction: column;
+        }
+    /* .about-container1;
+    .about-container2;
+    .about-container3; */
+    }
+// Media Queries (End)

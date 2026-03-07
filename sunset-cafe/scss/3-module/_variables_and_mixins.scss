@@ -1,0 +1,49 @@
+// Mixins
+// Breakpoints
+@media (min-width: 64em){
+  // styles go here
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
+
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}
+
+// Variables
+// Brown Color Variables
+$darkBrown: hsl(22, 32%, 15%);
+$mediumBrown: hsl(34, 74%, 43%);
+$lightBrown: hsl(27, 57%, 66%);
+$mocha: hsl(27, 93%, 82%);
+$marigold: hsl(39, 92%, 52%);
+
+// Gray Color Variables
+$darkGray: hsl(0, 0%, 25%);
+$mediumGray: hsl(0, 1%, 39%);
+$lightGray: hsl(0, 0%, 53%);
+$verylightGray: hsl(0, 0%, 82%);
+
+// White Color Variables
+$lightTan: hsl(40, 38%, 77%);
+$offWhite: hsl(40, 52%, 88%);
+$floralWhite: hsl(40, 90%, 96%);
+
+// Font Size Variables
+$font-small: 0.875rem; // 14px
+$font-medium: 1.125rem; // 18px
+$font-large: 1.25rem; // 20px
+$font-xlarge: 2.75rem; // 44px
+$font-xxlarge: 3.125rem; // 50px

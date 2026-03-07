@@ -1,0 +1,24 @@
+//Header Button Styles
+button, .button {
+    position: relative;
+    display: inline-block;
+    padding: 0.7rem 1.3rem; // 11.2px 20.8px
+    margin-top: 1rem; // 16px
+    margin-bottom: 1rem; // 16px
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(to right, $mediumBrown, $lightBrown);
+    color: $darkBrown;
+    font-size: $font-small;
+    font-weight: 350;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+        background: linear-gradient(to right, $darkBrown, $lightBrown);
+        color: $floralWhite;
+        transition: 300ms ease-in-out;
+        opacity: 0.9;
+    }
+}

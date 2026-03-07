@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/3-module/hero.scss"
+    ],
+    "names": [],
+    "file": "hero.css"
+}

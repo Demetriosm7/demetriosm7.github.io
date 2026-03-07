@@ -1,0 +1,99 @@
+// Hero
+.hero  {
+    background-color: $offWhite;
+
+    @include breakpoint-up(large){
+        display: flex;
+        align-items: center;
+    }
+
+    .image1 {
+        background-image: url("../../images/mountains-sunset.png"); // Roaytly free clipart provided by Gordon Djylan Johnson - https://openclipart.org/artist/GDJ
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 20rem;
+
+        @include breakpoint-up(large){
+            flex: 2 50%;
+            order: 2;
+            height: 45rem;
+        }
+
+        &::before {
+            background-image: url("../../images/mountains-sunset.png"); // Roaytly free clipart provided by Gordon Djylan Johnson - https://openclipart.org/artist/GDJ
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+    }
+
+    .image2 {
+        background-image: url("../../images/pexels-igor-starkov-1055054.jpg"); // Photo by Igor Starkov from Pexels
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 20rem;
+
+        @include breakpoint-up(large){
+            flex: 2 50%;
+            order: 2;
+            height: 45rem;
+        }
+
+        &::before {
+            background-image: url("../../images/pexels-igor-starkov-1055054.jpg"); // Photo by Igor Starkov from Pexels
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+    }
+
+    .image3 {
+        background-image: url("../../images/pexels-tim-douglas-6205626.jpg"); // Photo by Tim Douglas from Pexels
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 20rem;
+
+        @include breakpoint-up(large){
+            flex: 2 50%;
+            order: 2;
+            height: 45rem;
+        }
+        
+        &::before {
+            background-image: url('../../images/pexels-tim-douglas-6205626.jpg'); // Photo by Igor Starkov from Pexels
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+    }
+
+    // Hero Text Styles
+    &__text {
+        margin-left: 1.5rem; // 24px
+        margin-right: 1.5rem; //24px
+        text-align: center;
+        font-size: 1.125rem; //18px
+
+        @include breakpoint-up(large){
+            flex: 1 50%;
+            order: 1;
+            text-align: left;
+        }
+
+        @include breakpoint-up(medium){
+            flex: 1 50%;
+            order: 1;
+            text-align: left;
+        }
+
+        @include breakpoint-down(small){
+            flex: 1 50%;
+            order: 1;
+            text-align: center;
+        }
+    }
+}
