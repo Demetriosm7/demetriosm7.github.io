@@ -20,8 +20,8 @@
 }
 
 #portfolio-cards .box {
-	margin: 10px 10px;
-	width: 275px auto;
+	margin: 10px;
+	width: 275px;
 	display: inline-block;
   	padding: 20px 10px;
   	border-radius: 10px;
@@ -38,12 +38,14 @@
 
 #portfolio-cards img {
 	height: 165px;
-	width: 300px;
+	width: 100%;
 	max-height: 100%;
 	max-width: 100%;
+	object-fit: cover;
 }
 
-#portfolio-cards .box h3, p {
+#portfolio-cards .box h3, 
+#portfolio-cards .box p {
 	text-align: left;
 	margin: 0px auto;
 	text-decoration: none;

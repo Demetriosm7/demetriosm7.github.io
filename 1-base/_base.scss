@@ -5,7 +5,9 @@ body {
 	font: 15px/1.5 Arial, Hevetica, sans-serif;
 	padding: 0px;
 	margin: 0px;
-	background-color: #f4f4f4;
+	background: $bg-dark;
+  	color: $text-light;
+	background: red;
 }
 
 .container {
