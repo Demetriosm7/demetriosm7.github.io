@@ -1,11 +1,11 @@
+// Index.scss Section
 // Section 1 (Start)
 #section1 {
-	width: 100%;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	display: flex;
 	background: transparent;
-	flex-direction: row;
+	width: 100%;
+	padding: 1rem 1rem 2rem;
+	display: flex;
+	flex-direction: column; /* Mobile First */
 	border-bottom: #b7b7b7 3px solid;
 	align-items: center;
 }
@@ -15,8 +15,11 @@
 	background: transparent;
 	padding: 10px;
 	font-size: 25px;
-	color: #000;
-	margin: 3px;
+	color: $text-light;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	max-width: 600px;
+	text-align: center;
 }
 
 #section1 .container1 .title h1 {
@@ -24,21 +27,23 @@
 	padding: 10px;
 	font-family: 'Neucha', sans-serif;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 2rem;
 	text-align: center;
 }
 
 #section1 .container1 .title h3 {
-	font-size: 25px;
+	font-size: 1.2rem;
 	text-align: center;
 	padding: 10px;
 	margin-bottom: 10px;
-	background: #B0D1FF;
+	background: rgba(255, 255, 255, 0.08);
+	color: $text-light;
+	border: 1px solid $border-subtle;
 	border-radius: 10px;
 }
 
 #section1 .container1 .title p {
-	font-size: 23px;
+	font-size: 1rem;
 	text-align: center;
 	padding: 10px;
 }
@@ -48,34 +53,37 @@
 	background: transparent;
 	padding: 10px;
 	text-align: center;
-	color: #000;
+	color: $text-light;
 	margin: 3px;
+	width: 100%;
 }
 
-#section1 .container2 img {
-	max-height: 100%;
-	max-width: 100%;
+.hero-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	display: block;
 }
 // Section 1 (End)
 
+// Latest Work (Start)
 .latestwork p {
 	margin-top: 50px;
-
 	text-align: center;
 	font-family: 'Neucha', sans-serif;
 	font-weight: bold;
 	font-size: 35px;
-	color: #000;
+	color: $text-light;
 }
+// Latest Work (End)
 
 // Section 2 (Start)
 #showcase2 {
 	min-height: 450px;
 	padding-bottom: 50px;
-	background-size: 100%;
 	text-align: center;
-	color: #000;
-	background-color: #f4f4f4;
+	color: $text-light;
+	background-color: $bg-dark;
 }
 
 #showcase2 .container h1 {

@@ -1,16 +1,71 @@
-// Media Queries (Start)
-@media screen and (max-width: 768px) {
-    header #branding,
-    header nav,
-    header nav li,
-        .about-section1 {
-            flex-direction: column;
-        }
-        #section1 {
-            flex-direction: column;
-        }
-    /* .about-container1;
-    .about-container2;
-    .about-container3; */
+// Media Queries for 768px (Start)
+@media (min-width: 768px) {
+    // Index.scss Media-Queries for 768px (Start)
+    #section1 {
+        flex-direction: row;
+        align-items: center;
     }
-// Media Queries (End)
+
+    header .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav {
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .container1,
+    .container2 {
+         width: 50%;
+    }
+
+    .container1 {
+        margin-bottom: 0;
+    }
+    // Index.scss Media-Queries 768px (End)
+
+    // About.scss Media-Queries 768px (Start)
+    #section4 .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.about-section1 {
+		flex-direction: row;
+	}
+    // About.scss Media-Queries 768px (End)
+
+    // Portfolio.scss Media-Queries 768px (Start)
+    #portfolio-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+    #portfolio-cards .box:hover {
+        transform: translateY(-6px) scale(1.01);
+        box-shadow: 0 12px 25px rgba(212, 175, 55, 0.18);
+    }
+    // Portfolio.scss Media-Queries 768px (End)
+}
+// Media Queries for 768px (End)
+
+// Media Queries for 1024px (Start)
+@media (min-width: 1024px) {
+    // Index.scss Media-Queries 1024px (Start)
+	#portfolio-cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+    // Index.scss Media-Queries 1024px (End)
+
+    // About.scss Media-Queries 1024px (Start)
+    // About.scss Media-Queries 1024px (End)
+
+    // Portfolio.scss Media-Queries 1024px (Start)
+    // Portfolio.scss Media-Queries 1024px (End)
+}
+// Media Queries for 1024px  (End)

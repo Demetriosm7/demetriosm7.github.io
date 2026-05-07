@@ -1,25 +1,34 @@
 header {
-	min-height: 70px;
-	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 15px;
-	background: linear-gradient(to right, #21364b, #21364b);
-	-moz-box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	-webkit-box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-bottom: #000 3px solid;
+  width: 100%;
+  background-color: $bg-card;
+  border-bottom: 1px solid $border-subtle;
+  display: flex;
+  justify-content: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column; // mobile first
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
 }
 
 header a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 16px;
+  color: $text-light;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: $accent;
 }
 
 header li {
-	float: left;
-	display: inline;
-	padding: 0 10px 0 10px;
+	padding: 0;
 }
 
 header li img {
@@ -28,22 +37,49 @@ header li img {
 }
 
 header #branding {
-	float: left;
-	margin: 0px auto;
-	padding: 0px auto;
+	margin: 0;
+	padding: 0;
 	max-height: 100%;
-	max-width: 100%;
 }
 
 header nav {
-	float: right;
-	margin-top: 25px;
+	margin-top: 0;
 	font-weight: bold;
 }
 
-header a:hover {
-	color: #6B84FA;
-	font-weight: bold;
-	transition: all .30s ease-in-out;
-	text-decoration: none;
+header nav ul {
+	display: flex;
+	flex-direction: column; // Mobile stack
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  width: 100%;
+}
+
+header nav ul li {
+	margin-top: 8px;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: $accent;
+  transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: none;
 }

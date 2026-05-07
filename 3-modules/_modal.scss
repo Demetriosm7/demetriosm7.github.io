@@ -17,14 +17,23 @@
 }
 
 .modal-open {
-	padding: 0px !important;
+	padding: 0 !important;
 	overflow: auto !important;
 }
 
+.modal-content {
+	background: $bg-card;
+	color: $text-light;
+	border: 1px solid $border-subtle;
+	border-radius: 12px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
 .modal-header {
-	background: #b0d1ff;
-	color: #000;
+	background: rgba(255, 255, 255, 0.05);
+	color: $text-light;
 	font-family: 'Neucha', sans-serif;
+	border-bottom: 1px solid $border-subtle;
 }
 
 .modal-title {
@@ -33,18 +42,22 @@
 }
 
 .modal-body {
-	background: #EAEAEA;
+	background: transparent;
+	color: $text-light;
+}
+
+.modal-footer {
+	border-top: 1px solid $border-subtle;
+	background: transparent;
 }
 
 .close {
-	color: #fff;
+	color: $text-light;
+	opacity: 0.8;
 }
 
-.modal-title {
-	float: left;
-}
-
-.modal-head .close {
-	float: right;
+.close:hover {
+	color: $accent;
+	opacity: 1;
 }
 // Modal (End)
