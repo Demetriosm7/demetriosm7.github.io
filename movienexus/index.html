@@ -1,0 +1,49 @@
+<!-- movienexus/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieNexus</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  
+  <header>
+    <h1>🎬 MovieNexus</h1>
+    <button id="theme-toggle" aria-label="Toggle Theme">
+    <svg id="theme-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- JS will inject sun or moon icon here -->
+    </svg>
+    </button>
+    <p>Track your favorite movies, discover new ones, and build your watchlist.</p>
+  </header>
+
+  <main>
+    <section id="search-section">
+      <input type="text" id="movie-search" placeholder="Search for a movie..." />
+      <button id="search-button">Search</button>
+    </section>
+
+    <select id="sortMovies">
+      <option value="">Sort By</option>
+      <option value="newest">Newest First</option>
+      <option value="oldest">Oldest First</option>
+    </select>
+
+    <section id="results-section"> 
+      <!-- Search results are being injected here via JS -->
+      <div id="loading-spinner" class="hidden">
+        <div class="spinner"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MovieNexus</p>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

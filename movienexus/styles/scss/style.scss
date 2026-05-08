@@ -1,0 +1,18 @@
+// movienexus/style.scss
+
+// Abstracts
+@import "abstracts/themes";
+@import "abstracts/variables";
+
+// Base
+@import "base/base";
+
+// Layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
+
+// Components
+@import "components/movie-card";
+@import "components/search-section";
+@import "components/watchlist";

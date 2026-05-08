@@ -1,0 +1,22 @@
+// movienexus/layout/_header.scss
+
+header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: $spacing-medium;
+    text-align: center;
+    
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        padding: $spacing-small;
+        margin-top: $spacing-small;
+        width: 100%;
+        max-width: 400px;
+        border: none;
+        border-radius: 4px;;
+    }
+}

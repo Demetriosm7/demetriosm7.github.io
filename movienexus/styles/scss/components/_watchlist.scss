@@ -1,0 +1,42 @@
+// movienexus/components/_watchlist.scss
+
+#watchlist {
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: $spacing-medium;
+    }
+
+    #movie-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        li {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: $spacing-medium;
+            width: 200px;
+            padding: $spacing-small;
+            text-align: center;
+
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+            
+
+            img {
+                width: 100%;
+                border-radius: 4px;
+            }
+
+            p {
+                margin-top: $spacing-small;
+                font-size: 1rem;
+            }
+        }
+    }
+}
