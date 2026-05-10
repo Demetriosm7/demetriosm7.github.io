@@ -19,10 +19,6 @@ body {
 	overflow-x: hidden;
 }
 
-body {
-	border: 5px solid red;
-}
-
 body,
 h1, h2, h3, h4, h5, h6,
 p,
@@ -74,7 +70,7 @@ a:hover {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 12px; // Changed to try and fix mobile scaling
 }
 
 ul {
