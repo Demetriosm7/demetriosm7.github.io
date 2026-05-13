@@ -1,0 +1,58 @@
+// Footer Styles
+
+// Footer (Start)
+.footer {
+	width: 100%;
+	padding: 20px 0;
+	color: $text-light;
+	background-color: $bg-card;
+	border-top: 1px solid $border-subtle;
+}
+.footer-copyright p {
+	text-align: center;
+	padding: 15px;
+	color: $text-light;
+	opacity: 0.8;
+}
+
+.footer-nav {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.footer-nav ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.footer-nav ul li {
+	width: 60px;
+	height: 60px;
+	margin: 20px 20px;
+	border-radius: 100%;
+	display: inline-block;
+	list-style-type: none;
+	background: $bg-card;
+	border: 1px solid $border-subtle;
+}
+
+.footer-nav a {
+	color: $text-light;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 60px;
+}
+
+.footer-nav a:hover {
+	color: $accent;
+}
+
+.footer-button {
+	padding: 0;
+	margin: 35px auto 0;
+	text-align: center;
+}
+// Footer (End)
