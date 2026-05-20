@@ -346,24 +346,24 @@ header nav a:hover {
   text-align: left;
 }
 
-.about-section1 {
+.about-section1 .container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%;
-  padding: 15px;
-  padding-bottom: 40px;
-  margin-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 30px;
   margin-bottom: 20px;
   box-sizing: border-box;
   background: transparent;
-  border-bottom: #b7b7b7 3px solid;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .about-section1 img {
-  width: 100%;
+  width: 85%;
+  max-width: 300px;
   height: auto;
   display: block;
+  margin: 0 auto 15px;
   border-radius: 5px;
 }
 
@@ -405,7 +405,7 @@ header nav a:hover {
 
 #section4 {
   min-height: 450px;
-  padding-inline: 10px;
+  padding-top: 10px;
   margin-bottom: 30px;
   text-align: left;
   color: #e6e6e6;
@@ -644,7 +644,7 @@ header nav a:hover {
   #section4 .container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .about-section1 {
+  .about-section1 .container {
     flex-direction: row;
   }
   #portfolio-cards {
