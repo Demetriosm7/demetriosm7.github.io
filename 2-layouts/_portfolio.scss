@@ -45,16 +45,32 @@
 
 #portfolio-cards .box h3 {
   font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-weight: 700;
+  margin-bottom: 12px;
   color: $text-light;
 }
-
 
 #portfolio-cards .box p {
   font-size: 0.9rem;
   color: #b0b0b0;
   line-height: 1.4;
   margin-bottom: 12px;
+}
+
+#portfolio-cards .box p.featured-project {
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $accent;
+	margin-bottom: 8px;
+}
+
+#portfolio-cards .box p.tech-stack {
+	font-size: 0.85rem;
+	font-weight: 500;
+	color: $accent;
+	margin-bottom: 12px;
 }
 
 #portfolio-cards .box a {
@@ -71,6 +87,8 @@
 .project-links a {
   font-size: 0.85rem;
   padding: 6px 10px;
+  min-width: 95px;
+  text-align: center;
   border-radius: 6px;
   background-color: transparent;
   border: 1px solid $accent;
