@@ -1,5 +1,5 @@
 // Buttons Styles and Meida Queries
-// Hero button
+// Hero button (START)
 .hero-button {
     display: inline-block;
     background-color: $white;
@@ -9,8 +9,6 @@
     font-size: 1rem;
     text-transform: uppercase;
     border-radius: 0.25em;
-    
-    //border-style: solid;
 
     &:hover, 
     &:focus {
@@ -19,22 +17,30 @@
         border: $turquoise;
     }
 }
+// Hero button (END)
 
-// Portfolio Buttons
+// Portfolio Buttons (START)
 .portfolio-button {
     display: inline-block;
+    margin: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: $oceanBlue;
     color: $white;
-    font-weight: 700;
-    //padding: .5em 1.5em;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
     text-align: center;
+    transition: all 0.3s ease;
 
-    &:hover, 
+    &:hover,
     &:focus {
-        color:$turquoise
+        background-color: $turquoise;
+        color: $oceanBlue;
     }
 }
+// Portfolio Buttons (END)
 
-// Cta buttons
+// Cta Buttons (START)
 .cta-button1 {
     background: $white;
     color: black;
@@ -79,9 +85,11 @@
     
     }
 }
+// Cta Buttons (END)
 
 // Media Queries
-@media (min-width: 1em) { // 16px
+// Mobile Media Querie (START)
+@media (min-width: 1em) {
     .hero-button {
         font-size: .8rem;
     }
@@ -96,20 +104,19 @@
         width: 60%;
         margin-top: 0em;
         margin-bottom: 0.5em;
-        //margin: 0;
     }
 
     .cta-button2 {
         display: inline-block;
         padding: .5em .5em;
         width: 60%;
-        //margin-top: 0.5em;
         margin-bottom: 0.5em;
-        //margin: 0;
     }
 }
+// Mobile Media Querie (END)
 
-@media (min-width: 40em) { // 959.9984px
+// Tablet Media Querie (START)
+@media (min-width: 40em) {
 
     .hero-button {
         font-size: 1.5rem;
@@ -131,8 +138,10 @@
         padding: .5em 2em;
     }
 }
+// Tablet Media Querie (END)
 
-@media (min-width: 60em) { // 960px
+// Desktop Media Querie (START)
+@media (min-width: 60em) {
 
     .hero-button {
         font-size: 1.5rem;
@@ -154,3 +163,4 @@
         padding: .5em 2em;
     }
 }
+// Desktop Media Querie (End)

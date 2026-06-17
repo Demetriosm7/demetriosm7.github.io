@@ -1,96 +1,82 @@
-// Portfolio Styles and Media Queries
+// Portfolio Styles (START)
 .portfolio {
+    .portfolio-grid {
+        display: grid;
+        gap: 2rem;
+    }
 
     figure {
         margin: 0;
     }
 
-    h1 {
+    h2 {
         background-color: $oceanBlue;
         padding: 3em 0em 1em 0em;
         color: $white;
     }
 
-    .portfolio-item {
-        position: relative;
+        .portfolio-item {
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
 
         img {
             display: block;
         }
 
-        .portfolio-description {
-            position: absolute;
-            z-index: 100;
-            bottom: 0em;
-            left: 0em;
-            right: 0em;
-            color: white;
-            background: rgba(0,0,0,.8);
-            
-            a {
-                margin: 1em;
-                color: $white;
-            }
+        h3 {
+            padding: 1rem 1rem 0;
+            color: $oceanBlue;
+            font-size: 1.4rem;
+        }
 
-            a:hover, a:focus {
-                color: $turquoise;
-            }
+        p {
+            padding: 0 1rem;
+            line-height: 1.6;
+            color: $darkGray;
         }
     }
 }
+// Portfolio Styles (END)
 
-@media (min-width: 20em) { // 320px
-    .portfolio h1 {
+// Media Queries (START)
+// Mobile Media Querie (START)
+@media (min-width: 20em) {
+    .portfolio h2 {
         font-size: 1.5rem;
     }
 }
+// Mobile Media Querie (END)
 
-@media (min-width: 37em) { // 480px
+// Tablet Media Querie (START)
+@media (min-width: 37em) {
     .portfolio {
-        .portfolio-item {
-            width: 50%;
-            float: left;
-            overflow: hidden;
+        .portfolio-grid {
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        .portfolio-description {
-            transform: translateY(150%);
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-
-        .portfolio-item:hover .portfolio-description {
-            transform: translateY(0%);
-        }
-
-        h1 {
+        h2 {
             font-size: 1.5rem;
         } 
     }
 }
+// Tablet Media Querie (END)
 
-@media (min-width: 60em) { // 960 px
+// Desktop Media Querie (START)
+@media (min-width: 60em) {
     .portfolio {
-
-        .portfolio-item {
-            width: 33.3333334%;
-            float: left;
-            overflow: hidden;
+        .portfolio-grid {
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        .portfolio-description {
-            transform: translateY(150%);
-            padding-top: 1em;
-            padding-bottom: 1em;
-        }
-
-        .portfolio-item:hover .portfolio-description {
-            transform: translateY(0%);
-        }
-
-        h1 {
+        h2 {
             font-size: 2rem;
             
         } 
     }
 }
+// Desktop Media Querie (END)
+// Media Queries (END)

@@ -50,7 +50,6 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
     margin-top: 1.5em;
     margin-bottom: 1.5em;
   }
-
   .home-hero h1 {
     font-size: 2rem;
   }
@@ -64,7 +63,6 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
     margin-top: 3em;
     margin-bottom: 1.5em;
   }
-
   .home-hero h1 {
     font-size: 2.3rem;
   }
@@ -177,12 +175,19 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
 .portfolio-button {
   display: inline-block;
+  margin: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #0e0e58;
   color: #ffffff;
-  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
   text-align: center;
+  transition: all 0.3s ease;
 }
 .portfolio-button:hover, .portfolio-button:focus {
-  color: #00eeff;
+  background-color: #00eeff;
+  color: #0e0e58;
 }
 
 .cta-button1 {
@@ -227,11 +232,9 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   .hero-button {
     font-size: 0.8rem;
   }
-
   .portfolio-button {
     font-size: 0.8rem;
   }
-
   .cta-button1 {
     display: inline-block;
     padding: 0.5em 0.5em;
@@ -239,7 +242,6 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
     margin-top: 0em;
     margin-bottom: 0.5em;
   }
-
   .cta-button2 {
     display: inline-block;
     padding: 0.5em 0.5em;
@@ -251,17 +253,14 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   .hero-button {
     font-size: 1.5rem;
   }
-
   .portfolio-button {
     font-size: 1.3rem;
   }
-
   .cta-button1 {
     display: inline-block;
     width: 50%;
     padding: 0.5em 0.5em;
   }
-
   .cta-button2 {
     display: inline-block;
     width: 50%;
@@ -272,92 +271,72 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   .hero-button {
     font-size: 1.5rem;
   }
-
   .portfolio-button {
     font-size: 1.3rem;
   }
-
   .cta-button1 {
     display: inline;
     width: 60%;
     padding: 0.5em 0.5em;
   }
-
   .cta-button2 {
     display: inline;
     width: 60%;
     padding: 0.5em 2em;
   }
 }
+.portfolio .portfolio-grid {
+  display: grid;
+  gap: 2rem;
+}
 .portfolio figure {
   margin: 0;
 }
-.portfolio h1 {
+.portfolio h2 {
   background-color: #0e0e58;
   padding: 3em 0em 1em 0em;
   color: #ffffff;
 }
 .portfolio .portfolio-item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .portfolio .portfolio-item img {
   display: block;
 }
-.portfolio .portfolio-item .portfolio-description {
-  position: absolute;
-  z-index: 100;
-  bottom: 0em;
-  left: 0em;
-  right: 0em;
-  color: white;
-  background: rgba(0, 0, 0, 0.8);
+.portfolio .portfolio-item h3 {
+  padding: 1rem 1rem 0;
+  color: #0e0e58;
+  font-size: 1.4rem;
 }
-.portfolio .portfolio-item .portfolio-description a {
-  margin: 1em;
-  color: #ffffff;
-}
-.portfolio .portfolio-item .portfolio-description a:hover, .portfolio .portfolio-item .portfolio-description a:focus {
-  color: #00eeff;
+.portfolio .portfolio-item p {
+  padding: 0 1rem;
+  line-height: 1.6;
+  color: #404040;
 }
 
 @media (min-width: 20em) {
-  .portfolio h1 {
+  .portfolio h2 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 37em) {
-  .portfolio .portfolio-item {
-    width: 50%;
-    float: left;
-    overflow: hidden;
+  .portfolio .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .portfolio .portfolio-description {
-    transform: translateY(150%);
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-  .portfolio .portfolio-item:hover .portfolio-description {
-    transform: translateY(0%);
-  }
-  .portfolio h1 {
+  .portfolio h2 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 60em) {
-  .portfolio .portfolio-item {
-    width: 33.3333334%;
-    float: left;
-    overflow: hidden;
+  .portfolio .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .portfolio .portfolio-description {
-    transform: translateY(150%);
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-  .portfolio .portfolio-item:hover .portfolio-description {
-    transform: translateY(0%);
-  }
-  .portfolio h1 {
+  .portfolio h2 {
     font-size: 2rem;
   }
 }
@@ -583,22 +562,18 @@ footer .column-1 .unstyled-list li a:hover, footer .column-1 .unstyled-list li a
     padding: 0.25em;
     margin-top: 0;
   }
-
   [class^=column-]:first-of-type {
     padding-left: 0;
   }
-
   [class^=column-]:last-child {
     padding-right: 0;
   }
-
   .column-3 {
     width: 100%;
     padding-top: 2em;
     padding-bottom: 2.5em;
     text-align: center;
   }
-
   .column-1 {
     width: 33.333334%;
     text-align: center;
