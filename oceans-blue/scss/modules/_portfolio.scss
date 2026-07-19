@@ -3,6 +3,7 @@
     .portfolio-grid {
         display: grid;
         gap: 2rem;
+        padding: 2rem;
     }
 
     figure {
@@ -15,28 +16,45 @@
         color: $white;
     }
 
-        .portfolio-item {
-            display: flex;
-            flex-direction: column;
-            background-color: $white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,.15);
+        min-height: 520px;
 
         img {
             display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 1.5rem;
+            gap: 1.25rem;
         }
 
         h3 {
-            padding: 1rem 1rem 0;
+            margin-bottom: 1rem;
             color: $oceanBlue;
             font-size: 1.4rem;
         }
 
         p {
-            padding: 0 1rem;
+            margin-bottom: 1.5rem;
             line-height: 1.6;
             color: $darkGray;
+        }
+
+        .portfolio-button {
+            margin-top: auto;
+            align-self: center;
         }
     }
 }
@@ -55,7 +73,10 @@
 @media (min-width: 37em) {
     .portfolio {
         .portfolio-grid {
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            align-items: stretch;
         }
 
         h2 {
@@ -69,7 +90,10 @@
 @media (min-width: 60em) {
     .portfolio {
         .portfolio-grid {
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: stretch;
         }
 
         h2 {

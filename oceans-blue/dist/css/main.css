@@ -288,6 +288,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 .portfolio .portfolio-grid {
   display: grid;
   gap: 2rem;
+  padding: 2rem;
 }
 .portfolio figure {
   margin: 0;
@@ -304,19 +305,35 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-height: 520px;
 }
 .portfolio .portfolio-item img {
   display: block;
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolio .portfolio-item .portfolio-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  gap: 1.25rem;
 }
 .portfolio .portfolio-item h3 {
-  padding: 1rem 1rem 0;
+  margin-bottom: 1rem;
   color: #0e0e58;
   font-size: 1.4rem;
 }
 .portfolio .portfolio-item p {
-  padding: 0 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.6;
   color: #404040;
+}
+.portfolio .portfolio-item .portfolio-button {
+  margin-top: auto;
+  align-self: center;
 }
 
 @media (min-width: 20em) {
@@ -326,7 +343,10 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 }
 @media (min-width: 37em) {
   .portfolio .portfolio-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: stretch;
   }
   .portfolio h2 {
     font-size: 1.5rem;
@@ -334,7 +354,10 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 }
 @media (min-width: 60em) {
   .portfolio .portfolio-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: stretch;
   }
   .portfolio h2 {
     font-size: 2rem;
