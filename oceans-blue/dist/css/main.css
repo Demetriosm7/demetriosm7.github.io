@@ -290,9 +290,6 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   gap: 2rem;
   padding: 2rem;
 }
-.portfolio figure {
-  margin: 0;
-}
 .portfolio h2 {
   background-color: #0e0e58;
   padding: 3em 0em 1em 0em;
@@ -305,7 +302,12 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  min-height: 520px;
+  margin: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio .portfolio-item:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
 }
 .portfolio .portfolio-item img {
   display: block;
@@ -313,21 +315,23 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.portfolio .portfolio-item:hover img {
+  transform: scale(1.05);
 }
 .portfolio .portfolio-item .portfolio-content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1.5rem;
   gap: 1.25rem;
+  padding: 1.25rem;
 }
 .portfolio .portfolio-item h3 {
-  margin-bottom: 1rem;
   color: #0e0e58;
   font-size: 1.4rem;
 }
 .portfolio .portfolio-item p {
-  margin-bottom: 1.5rem;
   line-height: 1.6;
   color: #404040;
 }
@@ -343,10 +347,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 }
 @media (min-width: 37em) {
   .portfolio .portfolio-grid {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    align-items: stretch;
   }
   .portfolio h2 {
     font-size: 1.5rem;
@@ -354,10 +355,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 }
 @media (min-width: 60em) {
   .portfolio .portfolio-grid {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    align-items: stretch;
   }
   .portfolio h2 {
     font-size: 2rem;
